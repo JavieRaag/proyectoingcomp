@@ -10,7 +10,7 @@ int barras=10, decision=0, opcionesn=0, salir=0;
 cout<<"Hola! Hoy decidiras el rumbo de la historia de un cerdito llamado pascal y contaras con un contador de barras de comida \n"<<endl;
 
 cout<<"Pascal era un cerdito que vivia en una granja junto a sus amigos, hasta que un dia un terrible remolino arrasó con todo a su paso y lo dejo varado en un desierto, Pascal decicio regresar a la granja con la esperanza de reencontrarse con sus amigos,  \n Ahora elige que hará Pascal \n 1:ir al pueblo \n 2:Espear que pase alguien \n 3:Ir al pueblo abandonado \n 4:ir a la bahia"<<endl;
-std::cout << "Barras disponibles:"<<barras << std::endl;
+std::cout << "Barras disponibles:"<<barras << endl;
 cin>>opcionesn;
 
 switch(opcionesn)
@@ -21,18 +21,18 @@ switch(opcionesn)
     switch (opcionesn){
         case 1: opcionesn == 4;
         cout<<"Fue al pueblo y perdio "<< int(barras)-float(3);
-        std::cout << "" << std::endl;
+        cout << "" << std::endl;
         break;
         case 2: opcionesn ==5;
         cout<<"buebos 2";
         break;
         case 3: opcionesn == 3;
         cout<<"elegiste-3- \n fue al pueblo abandonado "<< int(barras)-float(2);
-        std::cout << "Barras disponibles:"<<barras << std::endl;
+        std::cout << "Barras disponibles:"<<barras << endl;
         cin>>opcionesn;
         case 4: opcionesn == 4;
         cout<<"elegiste-4- \n fue a la bahia y perdio "<< int(barras)-float(2);
-        std::cout << "Barras disponibles:"<<barras << std::endl;
+        std::cout << "Barras disponibles:"<<barras << endl;
         cin>>opcionesn;
         default: cout<<"elige una opcion correcta";    }
         break;
@@ -43,11 +43,11 @@ switch(opcionesn)
     break;
     case 3: opcionesn == 3;
     cout<<"elegiste-3- \n fue al pueblo abandonado "<< int(barras)-float(2);
-    std::cout << "Barras disponibles"<<barras << std::endl;
+    std::cout << "Barras disponibles"<<barras << endl;
     cin>>opcionesn;
     case 4: opcionesn == 4;
     cout<<"elegiste-4- \n fue a la bahia y perdio "<< int(barras)-float(2);
-    std::cout << "Barras disponibles:"<<barras << std::endl;
+    std::cout << "Barras disponibles:"<<barras << endl;
     cin>>opcionesn;
     default: cout<<"elige una opcion correcta";
       
