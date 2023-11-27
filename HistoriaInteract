@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-int barras=10, decision=0, opcionesn=0, salir=0;
+int barras=6, decision=0, opcionesn=0, salir=0;
 
 while(opcionesn != 1 && opcionesn != 2 && opcionesn != 3 && opcionesn != 4 && opcionesn != 5)   
     {
@@ -19,14 +19,16 @@ cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
     switch(opcionesn)
     {
     case 1:
-    cout<<"fue al pueblo en donde encontró gente tratando de atraparlo y otro niño que le prometio ayudarlo. \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+    barras-=2;
+    cout<<"fue al pueblo en donde encontró gente tratando de atraparlo y otro niño que le prometio ayudarlo. \n Quedó con "<< barras << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
     cin>>opcionesn;
     cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
         //menu1.1
         switch(opcionesn)
         {       
         case 1:
-        cout<<"Fue con el niño y este le dió alimento \n Quedó con "<< (barras)+float(2); cout << " barras \n Elige su proxima acción \n1.Seguir confiando en el niño \n2.Esperar el momento e irse \n3.Tomar mas comida con la posibilidad que se enoje" << std::endl;
+        barras-=1;
+        cout<<"Fue con el niño y este le dió alimento \n Quedó con "<< barras << " barras \n Elige su proxima acción \n1.Seguir confiando en el niño \n2.Esperar el momento e irse \n3.Tomar mas comida con la posibilidad que se enoje" << std::endl;
         cin>>opcionesn;
         cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
             switch(opcionesn)
