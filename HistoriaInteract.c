@@ -223,85 +223,282 @@ cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
             
         break;
         case 2:
-        cout<<"Siguió buscando y encontró un mapa \n Quedó con "<< (barras)-float(2); cout << " barras \n Elige su proxima acción \n1.Revisar el mapa \n2.Guardar el mapa \n3.Comerse el mapa" << std::endl;
+        cout<<"Siguió buscando y encontró un mapa \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Revisar el mapa \n2.Guardar el mapa \n3.Comerse el mapa" << std::endl;
         cin>>opcionesn;
         cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
                 //menu 1.2
                 switch(opcionesn)
                 {
                 case 1: 
-                cout<<"Revisaste el mapa y si esta la granja dentro de el \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Seguir el mapa \n2.Guardarlo y seguir buscando algo que le pueda ayudar\n3.Buscar comida para llevarles a sus amigos de la granja" << std::endl;
+                cout<<"Revisaste el mapa y si esta la granja dentro de el \n Quedó con "<< barras << " barras \n Elige su proxima acción \n1.Seguir el mapa \n2.Guardarlo y seguir buscando algo que le pueda ayudar\n3.Buscar comida para llevarles a sus amigos de la granja" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegise -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
                     //menu1.1.1
                     switch(opcionesn)
                     {
-                    case 1: opcionesn == 1;
-                    cout<<"A \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-            
+                    case 1:
+                    cout<<"Siguió el  mapa pero a mitad de camino le ofrecieron mucha comida a cambio de el \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Cambaiar el mapa e intentar llegar sin el \n2.Rechazar la oferta y seguir el camino \n3.Estafar al que le propuso el cambio" << std::endl;
+                        cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
                     break;
-                    case 2: opcionesn == 2;
-                    cout<<"B \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-        
+                    case 2:
+                    cout<<"Encontró un carrito prendido abandonado \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Subirse, extender el mapa e ir a la granja \n2.Apagarlo y esperar al dueño \n3.Ignorarlo e irse a la granja" << std::endl;
+                        cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
                     break;
-                    case 3: opcionesn == 3; 
-                    cout<<"C \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-                    
+                    case 3:
+                    cout<<"Solo encontró agua para sus amigos \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir solo con el agua \n2.Cambiar más de la mitad del agua por poca comida \n3.Tomar un poco de agua e irse corriendo a la granja" << std::endl;
+                    cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
                     break;
+                    case 4:
+                    return 0;
                     default: cout<<"elige una opción correcta"<<endl;
                     }
                 case 2:
-                cout<<"B \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-
+                cout<<"Guardó el mapa y comió de un plato abandonado al lado de la basura \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Intentar vomitarlo \n2.Seguir buscando la granja \n3.Subirse a una camioneta sin que se den cuenta" << std::endl;
+                cin>>opcionesn;
+                cout<<"Elegise -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                    //menu penultimo
+                    switch(opcionesn)
+                    {
+                    case 1:
+                    cout<<"Lo intentó vomitar pero solo salieron cachitos pero importantes \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Cambaiar el mapa e intentar llegar sin el \n2.Rechazar la oferta y seguir el camino \n3.Estafar al que le propuso el cambio" << std::endl;
+                        cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
+                    break;
+                    case 2:
+                    cout<<"Seguiste buscando la granja y te habló un perro muy grande que te vió perdido \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Subirse, extender el mapa e ir a la granja \n2.Apagarlo y esperar al dueño \n3.Ignorarlo e irse a la granja" << std::endl;
+                        cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
+                    break;
+                    case 3:
+                    cout<<"Se subió a la camioneta y a lo lejos vió el anuncio de su granja \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir solo con el agua \n2.Cambiar más de la mitad del agua por poca comida \n3.Tomar un poco de agua e irse corriendo a la granja" << std::endl;
+                    cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
+                    break;
+                    case 4:
+                    return 0;
+                    default:
+                    cout<<"Elige una opción correcta"<<endl;
+                    }
+                    
                 break;
                 case 3:
-                cout<<"C \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-
+                cout<<"Se comió el mapa y ahora no sabe donde esta \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                cin>>opcionesn;
+                cout<<"Elegise -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                    //menu penultimo
+                    switch(opcionesn)
+                    {
+                    case 1:
+                    cout<<"Siguió el  mapa pero a mitad de camino le ofrecieron mucha comida a cambio de el \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Cambaiar el mapa e intentar llegar sin el \n2.Rechazar la oferta y seguir el camino \n3.Estafar al que le propuso el cambio" << std::endl;
+                        cin>>opcionesn;
+                        cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                        switch(opcionesn)
+                        {
+                        barras-=2;    
+                        case 1:
+                        cout<<"Corrió pero le faltó energia y, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        case 2:
+                        cout<<"Hizó la parada y encontro agua que le dió la suficiente energia para llegar y, ¡Logró llegar a la granja!" << std::endl;
+                        break;
+                        case 3:
+                        cout<<"Esperó mucho y no reunio la suficiente energia, ¡No logró llegar a la granja!\n ¡Ni modo!\n Quedó con "<<barras<< " barras" << std::endl;
+                        break;
+                        default:
+                        cout<<"Elige una opcion correcta"<<endl;
+                        }
+                    break;
+                    default:
+                    cout<<"Elige una opcion correcta"<< endl;
+                    }
                 break;
+                case 4:
+                cout<<"Salir del programa"<<endl;
                 default:
-                cout<<"Elige una opcion correcta"<< endl;
+                cout<<"Elige una opción correcta"<<endl;
                 }
         break;
         case 3:
-        cout<<"Entro a la casa abierta y se dio cuenta que era de un carnicero cuando vió los cuchillos y la carne \n Quedó con "<< (barras)-float(2); cout << " barras \n Elige su proxima acción \n1.Esconderse \n2.Tomar comida que hay en la mesa e irse \n3.Esperar al carnicero e intentar hablar con el" << std::endl;
+        cout<<"Entro a la casa abierta y se dió cuenta que era de un carnicero cuando vió los cuchillos y la carne \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Esconderse \n2.Tomar comida que hay en la mesa e irse \n3.Esperar al carnicero e intentar hablar con el" << std::endl;
         cin>>opcionesn;
         cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
                 //menu 1.1.3
                 switch(opcionesn)
                 {
                 case 1:
-                cout<<"fue al pueblo en donde encontró gente tratando de atraparlo y otro niño que le prometio ayudarlo. \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                cout<<"Se escondio y llegó el carnicero a dormir a su casa \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
                      //menu1.1.1
                     switch(opcionesn)
                     {
                     case 1:
-                    cout<<"A \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                    cout<<"A \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
                 
                     break;
-                    case 2: opcionesn == 2;
+                    case 2:
                 
-                    cout<<"B \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                    cout<<"B \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
                 
                     break;
                     case 3: 
                 
-                    cout<<"C \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                    cout<<"C \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
                 
                     break;
                     default:
                     cout<<"Elige una opción correcta"<<endl; 
                     }
+                break;
                 case 2:
-                cout<<"B \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-
-                break;
+                cout<<"Tomó un poco de comida y se fue sin dejar rastro \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                cin>>opcionesn;
+                cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                     //menu1.1.1
+                    switch(opcionesn)
+                    {
+                    case 1:
+                    cout<<"A \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
                 
-                case 3:
-                cout<<"C \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
-
+                    break;
+                    case 2:
+                
+                    cout<<"B \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                
+                    break;
+                    case 3: 
+                
+                    cout<<"C \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                
+                    break;
+                    case 4:
+                    return 0;
+                    default:
+                    cout<<"Elige una opción correcta"<<endl; 
+                    }
                 break;
+                case 3:
+                cout<<"El carnicero lo vió y luego luego fue por el \n Quedó con "<< (barras)-float(3); cout << " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                cin>>opcionesn;
+                cout<<"Elegiste -"<<opcionesn<<"- \nBarras disponibles:"<<barras<< endl;
+                     //menu1.1.1
+                    switch(opcionesn)
+                    {
+                    case 1:
+                    cout<<"A \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                
+                    break;
+                    case 2:
+                
+                    cout<<"B \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                
+                    break;
+                    case 3: 
+                
+                    cout<<"C \n Quedó con "<< barras<< " barras \n Elige su proxima acción \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta" << std::endl;
+                
+                    break;
+                    case 4:
+                    return 0;
+                    default:
+                    cout<<"Elige una opción correcta"<<endl; 
+                    }
+                break;
+                case 4:
+                return 0;
                 default:
                 cout<<"Elige una opción correcta"<<endl;
                 }
