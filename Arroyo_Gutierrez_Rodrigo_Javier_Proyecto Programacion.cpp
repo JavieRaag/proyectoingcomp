@@ -1,4 +1,8 @@
+#include <iostream>
+#include <string.h>
+#include <limits>
 
+using namespace std;
 
 int main()
 {
@@ -16,7 +20,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
     {
     case 1:
     barras-=2;
-    cout<<"fue al pueblo en donde encontro gente tratando de atraparlo y otro niÃ±o que le prometio ayudarlo. \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Ir con el niÃ±o \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta \n4.Salir del programa" << std::endl;
+    cout<<"fue al pueblo en donde encontro gente tratando de atraparlo y otro niño que le prometio ayudarlo. \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta \n4.Salir del programa" << std::endl;
     cin>>opcionesn;
     cout<<"Elegiste -"<<opcionesn<<""<<endl;
         //menu1.1
@@ -24,14 +28,14 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
         {      
         case 1:
         barras-=1;
-        cout<<"Fue con el niÃ±o y este le dio alimento \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Seguir confiando en el niÃ±o \n2.Esperar el momento e irse \n3.Tomar mas comida con la posibilidad que se enoje\n4.Salir del programa" << std::endl;
+        cout<<"Fue con el niño y este le dio alimento \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Seguir confiando en el niño \n2.Esperar el momento e irse \n3.Tomar mas comida con la posibilidad que se enoje\n4.Salir del programa" << std::endl;
         cin>>opcionesn;
         cout<<"Elegiste -"<<opcionesn<<""<<endl;
             switch(opcionesn)
             {
             
             case 1: barras-=1;
-            cout<<"El niÃ±o te explico que el plan que era escapar un dia de su casa y empezar el viaje a tu granja. \n Quedo con "<<barras<< " barras \n Elige su proxima accion \n1.Aceptar el trato \n2.Decirle que no y que lo haras solo \n3.Robar su comida e irte\n4.Salir del programa" << std::endl;
+            cout<<"El niño te explico que el plan que era escapar un dia de su casa y empezar el viaje a tu granja. \n Quedo con "<<barras<< " barras \n Elige su proxima accion \n1.Aceptar el trato \n2.Decirle que no y que lo haras solo \n3.Robar su comida e irte\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.1.1
@@ -39,7 +43,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 {
                 barras-=0;
                 case 1:barras-=1;
-                cout<<"Aceptaste el trato y el dia del escape sus papas los descubrieron \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Ayudar al niÃ±o y salvarlo \n2.Irse al momento \n3.Esperar para robarle dinero para ir a la granja \n4.Salir del programa" << std::endl;
+                cout<<"Aceptaste el trato y el dia del escape sus papas los descubrieron \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Ayudar al niño y salvarlo \n2.Irse al momento \n3.Esperar para robarle dinero para ir a la granja \n4.Salir del programa" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     //menu 1.1.1.1
@@ -47,13 +51,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     {
                     barras-=2;    
                     case 1:
-                    cout<<"Lo ayudo y lo salvo!, El cumplio y lo llevo a la granja donde se reunio con sus amigos\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                    cout<<"Lo ayudo y lo salvo!, El cumplio y lo llevo a la granja donde se reunio con sus amigos\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                     break;
                     case 2:
-                    cout<<"Se fue rapido pero se le acabron las barras de energia y, Â¡No logro llegar a la granja!" << std::endl;
+                    cout<<"Se fue rapido pero se le acabron las barras de energia y, ¡No logro llegar a la granja!" << std::endl;
                     break;
                     case 3:
-                    cout<<"Se fue y pidio un taxi hacia la granja, Â¡Lo logro! Llego a la granja, pero, Â¿quÃ© se sintio traicionarlo?"<<endl;
+                    cout<<"Se fue y pidio un taxi hacia la granja, ¡Lo logro! Llego a la granja, pero, ¿qué se sintio traicionarlo?"<<endl;
                     break;
                     case 4:
                     return 0;
@@ -62,20 +66,20 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     }
                 break;
                 case 2:barras-=1;
-                cout<<"Le dijo que no, y el niÃ±o le dijo que en verdad queria ayudarlo \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Confiar en Ã©l \n2.Que se vaya aun asÃ­ \n3.Decirle que sÃ­ pero que si tambien podia llevarle comida a sus amigos" << std::endl;
+                cout<<"Le dijo que no, y el niño le dijo que en verdad queria ayudarlo \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Confiar en él \n2.Que se vaya aun así \n3.Decirle que sí pero que si tambien podia llevarle comida a sus amigos" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu 1.1.1.2
                     switch(opcionesn)
                     {    
                     case 1:
-                    cout<<"Confio en Ã©l, cumplio y lo llevo a la granja donde se reunio con sus amigos\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                    cout<<"Confio en él, cumplio y lo llevo a la granja donde se reunio con sus amigos\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                     break;
                     case 2:
-                    cout<<"Se fue pero se le acabron las barras de energia y, Â¡No logro llegar a la granja!" << std::endl;
+                    cout<<"Se fue pero se le acabron las barras de energia y, ¡No logro llegar a la granja!" << std::endl;
                     break;
                     case 3:
-                    cout<<"Le dijo que sÃ­ pero qur solo poquita, te llevo, Â¡Lo logro! Llego a la granja y les diste comida a tus amigos"<<endl;
+                    cout<<"Le dijo que sí pero qur solo poquita, te llevo, ¡Lo logro! Llego a la granja y les diste comida a tus amigos"<<endl;
                     break;
                     default:
                     cout<<"Elige una opcion correcta"<<endl;
@@ -89,13 +93,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     {
                     barras-=2;    
                     case 1:
-                    cout<<"Corrio pero le falto energia y, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                    cout<<"Corrio pero le falto energia y, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                     break;
                     case 2:
-                    cout<<"Hizo la parada y encontro agua que le dio la suficiente energia para llegar y, Â¡Logro llegar a la granja!" << std::endl;
+                    cout<<"Hizo la parada y encontro agua que le dio la suficiente energia para llegar y, ¡Logro llegar a la granja!" << std::endl;
                     break;
                     case 3:
-                    cout<<"Espero mucho y no reunio la suficiente energia, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                    cout<<"Espero mucho y no reunio la suficiente energia, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                     break;
                     default:
                     cout<<"Elige una opcion correcta"<<endl;
@@ -106,27 +110,27 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 }
             break;    
             case 2:barras-=2;
-            cout<<"Te fuiste y te perdiste, solo recuerdas el camino de regreso al niÃ±o \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Regresar con el niÃ±o \n2.Seguir caminando hasta encontrar algo \n3.Buscar en la basura algo de comida\n4.Salir del programa" << std::endl;
+            cout<<"Te fuiste y te perdiste, solo recuerdas el camino de regreso al niño \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Regresar con el niño \n2.Seguir caminando hasta encontrar algo \n3.Buscar en la basura algo de comida\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     //menu1.12
                     switch(opcionesn)
                     {
                     case 1:barras-=1;
-                    cout<<"Regresaste con el niÃ±o pero te dijo que solo te podia decir el camino ya que no podia acompaÃ±arte \n Quedo con "<< (barras)-float(2); cout << " barras \n Elige su proxima accion \n1.Ir con el niÃ±o \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta\n4.Salir del programa" << std::endl;
+                    cout<<"Regresaste con el niño pero te dijo que solo te podia decir el camino ya que no podia acompañarte \n Quedo con "<< (barras)-float(2); cout << " barras \n Elige su proxima accion \n1.Ir con el niño \n2.Seguir escapandode la gente y buscar en el pueblo \n3.Entrar a una casa abierta\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                     cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         //menu 1.1.1.1
                         switch(opcionesn)
                         {  
                         case 1:barras-=1;
-                        cout<<"El cumplio y le dijo el camino a la granja, llego y se reunio con sus amigos\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"El cumplio y le dijo el camino a la granja, llego y se reunio con sus amigos\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=3;
-                        cout<<"Se fue rapido pero se le acabron las barras de energia y, Â¡No logro llegar a la granja!" << std::endl;
+                        cout<<"Se fue rapido pero se le acabron las barras de energia y, ¡No logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=1;
-                        cout<<"Se fue y pidio un taxi hacia la granja, Â¡Lo logro! Llego a la granja, pero, Â¿quÃ© se sintio traicionarlo?"<<endl;
+                        cout<<"Se fue y pidio un taxi hacia la granja, ¡Lo logro! Llego a la granja, pero, ¿qué se sintio traicionarlo?"<<endl;
                         break;
                         case 4:
                         return 0;
@@ -135,7 +139,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                     break;
                     case 2:barras-=1;
-                    cout<<"Encontro un seÃ±or de un sombrero en una esquina que le ofrecio ayuda \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguirlo \n2.Ignorarlo \n3.Morderlo\n4.Salir del programa" << std::endl;
+                    cout<<"Encontro un señor de un sombrero en una esquina que le ofrecio ayuda \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguirlo \n2.Ignorarlo \n3.Morderlo\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                     cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         //menu 1.1.1.1
@@ -143,13 +147,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         {
                         barras-=2;    
                         case 1:barras-=6;
-                        cout<<"Lo siguio y resulto ser malo\n Â¡No logro regresar a la  granja y quedo hecho chicharron!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Lo siguio y resulto ser malo\n ¡No logro regresar a la  granja y quedo hecho chicharron!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=6;
-                        cout<<"Â¡Lo ignoro y ya cuando se iba, el seÃ±or lo capturo y, Â¡No logro llegar a la granja!" << std::endl;
+                        cout<<"¡Lo ignoro y ya cuando se iba, el señor lo capturo y, ¡No logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=2;
-                        cout<<"Lo mordio y resulto ser una persona mala asi que por ayudar a atraparlo lo llevaron a la granja, Â¡Lo logro! Llego a la granja y se reunio con sus amigos, que feliz!"<<endl;
+                        cout<<"Lo mordio y resulto ser una persona mala asi que por ayudar a atraparlo lo llevaron a la granja, ¡Lo logro! Llego a la granja y se reunio con sus amigos, que feliz!"<<endl;
                         break;
                         case 4:
                         return 0;
@@ -166,13 +170,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         {
                         barras-=2;    
                         case 1:barras-=1;
-                        cout<<"Inicio el recorrido a la granja y comio lo que habia recogido y eso le ayudo a llegar a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Inicio el recorrido a la granja y comio lo que habia recogido y eso le ayudo a llegar a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=1;
-                        cout<<"Se fue rapido y, Â¡Logro llegar a la granja!\nÂ¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Se fue rapido y, ¡Logro llegar a la granja!\n¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Tiro la comida y fue a la granja pero no le basto la energia y, \n Â¡No logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Tiro la comida y fue a la granja pero no le basto la energia y, \n ¡No logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         return 0;
@@ -189,27 +193,27 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     }
             break;
             case 3:barras+=2;
-            cout<<"El niÃ±o se enojo y te regaÃ±o porque sus papas cuentan la comida y se pueden dar cuenta \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Aceptar el regaÃ±o del niÃ±o \n2.Enojarte o sentirte mal e irte \n3.Pedirle disculpas al niÃ±o y decirle que te vas a ir\n4.Salir del programa" << std::endl;
+            cout<<"El niño se enojo y te regaño porque sus papas cuentan la comida y se pueden dar cuenta \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Aceptar el regaño del niño \n2.Enojarte o sentirte mal e irte \n3.Pedirle disculpas al niño y decirle que te vas a ir\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         //menu1.13
                         switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Acepto el regaÃ±o del niÃ±o y el niÃ±o le dijo que esta bien que lo ayduara \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir con el niÃ±o \n2.Salirse de su casa \n3.Robar comida e irse\n4.Salir del programa" << std::endl;
+                        cout<<"Acepto el regaño del niño y el niño le dijo que esta bien que lo ayduara \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir con el niño \n2.Salirse de su casa \n3.Robar comida e irse\n4.Salir del programa" << std::endl;
                 		cin>>opcionesn;
            				    cout<<"Elegiste -"<<opcionesn<<""<<endl;
   					     	switch(opcionesn)
                             {
                             barras-=2;    
                             case 1:barras-=1;
-                            cout<<"Siguio con el niÃ±o y este lo llevo a la granja, Â¡Lo logro!\n Â¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio con el niño y este lo llevo a la granja, ¡Lo logro!\n ¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se fue, pero se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue, pero se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Con la comida que robo si pudo llegar a la granja \n Â¡Logro llegar!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Con la comida que robo si pudo llegar a la granja \n ¡Logro llegar!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -218,19 +222,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 2:barras-=1;
-                        cout<<"Le dijo que no, y el niÃ±o le dijo que en verdad queria ayudarlo pero que cooperara \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Acepta el trato \n2.Buscar dinero en su casa \n3.Pedirle nadamas un mapa y una verdura\n4.Salir del programa" << std::endl;
+                        cout<<"Le dijo que no, y el niño le dijo que en verdad queria ayudarlo pero que cooperara \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Acepta el trato \n2.Buscar dinero en su casa \n3.Pedirle nadamas un mapa y una verdura\n4.Salir del programa" << std::endl;
        				  cin>>opcionesn;
            				    cout<<"Elegiste -"<<opcionesn<<""<<endl;
   					     	switch(opcionesn)
                             {   
                             case 1:barras-=1;
-                            cout<<"Siguio con el niÃ±o y este lo llevo a la granja, Â¡Lo logro!\n Â¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio con el niño y este lo llevo a la granja, ¡Lo logro!\n ¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Busco dinero pero lo vio el niÃ±o y de consecuencia lo durmio Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Busco dinero pero lo vio el niño y de consecuencia lo durmio ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Le brindo las heramientas el niÃ±o y Pascal muy facilemnte llego a la granja \n Â¡SÃ­ logro llegar!\n Â¡Sus amigos estaban muy contentos de verlo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le brindo las heramientas el niño y Pascal muy facilemnte llego a la granja \n ¡Sí logro llegar!\n ¡Sus amigos estaban muy contentos de verlo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -245,13 +249,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
   					     	switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Siguio con el niÃ±o y este lo llevo a la granja, Â¡Lo logro!\n Â¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio con el niño y este lo llevo a la granja, ¡Lo logro!\n ¡Ahora vuelve a ser feliz en la granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Le robo el celular y con el mapa tomo la ruta mas corta y cambio el celular por comida Â¡Si logro llegar a la granja!\nÂ¡Les llevo comida a sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le robo el celular y con el mapa tomo la ruta mas corta y cambio el celular por comida ¡Si logro llegar a la granja!\n¡Les llevo comida a sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Tomo agua pero no lo hidrato lo suficiente y quedo desmayado en el camino \n Â¡No logro llegar!\n Â¡Falto muy poco!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Tomo agua pero no lo hidrato lo suficiente y quedo desmayado en el camino \n ¡No logro llegar!\n ¡Falto muy poco!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -295,32 +299,32 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         {
                         barras-=2;    
                         case 1:barras+=4;
-                        cout<<"Acepto el trato y ya con la comida Inicio el viaje, Â¡SÃ­ logro llegar a la granja!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Acepto el trato y ya con la comida Inicio el viaje, ¡Sí logro llegar a la granja!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=6;
-                        cout<<"Rechazo la oferta y no tuvo suficiente energia para llegar y, Â¡No logro llegar a la granja!" << std::endl;
+                        cout<<"Rechazo la oferta y no tuvo suficiente energia para llegar y, ¡No logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Lo estafo, el que le propuso el cambio le dio la comida y Pascal se iba a escapar pero lo atrapo el chico, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Lo estafo, el que le propuso el cambio le dio la comida y Pascal se iba a escapar pero lo atrapo el chico, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         default:
                         cout<<"Elige una opcion correcta"<<endl;
                         }
                     break;
                     case 2:barras-=2;
-                    cout<<"Encontro un carrito prendido abandonado \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Subirse, extender el mapa e ir a la granja \n2.Apagarlo y esperar al dueÃ±o \n3.Ignorarlo e irse a la granja\n4.Salir del programa" << std::endl;
+                    cout<<"Encontro un carrito prendido abandonado \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Subirse, extender el mapa e ir a la granja \n2.Apagarlo y esperar al dueño \n3.Ignorarlo e irse a la granja\n4.Salir del programa" << std::endl;
                         cin>>opcionesn;
                         cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Manejo hasta la granja con ayuda del mapa Â¡SÃ­ logro llegar a la granja!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Manejo hasta la granja con ayuda del mapa ¡Sí logro llegar a la granja!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=1;
-                        cout<<"Espero al dueÃ±o y este le agradecio llevandolo y dandole dinero para comida \nÂ¡Logro llegar a la granja!" << std::endl;
+                        cout<<"Espero al dueño y este le agradecio llevandolo y dandole dinero para comida \n¡Logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Ignoro el carro pero no tuvo la suficiente energia para llegar a la granja, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Ignoro el carro pero no tuvo la suficiente energia para llegar a la granja, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         return 0;
@@ -335,13 +339,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {   
                         case 1:barras+=1;
-                        cout<<"Corrio pero le falto energia y tuvo que beber el agua, Â¡SÃ­ logro llegar a la granja!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Corrio pero le falto energia y tuvo que beber el agua, ¡Sí logro llegar a la granja!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=3;
-                        cout<<"Cambio el agua por la comida y llego a la granja, Â¡Logro llegar a la granja!, les dio la comida a sus amigos" << std::endl;
+                        cout<<"Cambio el agua por la comida y llego a la granja, ¡Logro llegar a la granja!, les dio la comida a sus amigos" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"No tomo el agua suficiente y no reunio la suficiente energia, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"No tomo el agua suficiente y no reunio la suficiente energia, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         default:
                         cout<<"Elige una opcion correcta"<<endl;
@@ -366,51 +370,51 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {   
                         case 1:barras-=6;
-                        cout<<"Corrio pero le falto energia y, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Corrio pero le falto energia y, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=1;
-                        cout<<"Encontro agua que le dio la suficiente energia para llegar y, Â¡Logro llegar a la granja!" << std::endl;
+                        cout<<"Encontro agua que le dio la suficiente energia para llegar y, ¡Logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=0;
-                        cout<<"Se quedo dormido y le robaron el mapa, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Se quedo dormido y le robaron el mapa, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         default:
                         cout<<"Elige una opcion correcta"<<endl;
                         }
                     break;
                     case 2:barras-=1;
-                    cout<<"Tiro el mapa y se quedo sin saber en donde estaba \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirle a un perro si sabe donde esta \n2.Buscar el mapa \n3.Intentar robar dinero de un niÃ±o\n4.Salir del programa" << std::endl;
+                    cout<<"Tiro el mapa y se quedo sin saber en donde estaba \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirle a un perro si sabe donde esta \n2.Buscar el mapa \n3.Intentar robar dinero de un niño\n4.Salir del programa" << std::endl;
                         cin>>opcionesn;
                         cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {   
                         case 1:barras-=1;
-                        cout<<"El perro le dijo que si sabia pero que era en otro estado, lo cual era imposible, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"El perro le dijo que si sabia pero que era en otro estado, lo cual era imposible, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=6;
-                        cout<<"Busco el mapa pero no lo encontro y se acabo sus barras de energia, Â¡No lgro llegar a la granja!" << std::endl;
+                        cout<<"Busco el mapa pero no lo encontro y se acabo sus barras de energia, ¡No lgro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=2;
-                        cout<<"Le robo dinero a un niÃ±o pero no le alcanzo para nada y lo atraparon, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Le robo dinero a un niño pero no le alcanzo para nada y lo atraparon, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         default:
                         cout<<"Elige una opcion correcta"<<endl;
                         }
                     break;
                     case 3:barras+=1;
-                    cout<<"Comio mas comida y le hizo daÃ±o \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Avanzar hacia la granja \n2.Comer verduras e intentar llegar a la granja \n3.Tomar agua de un charco muy grande e intentar ir a la granja\n4.Salir del programa" << std::endl;
+                    cout<<"Comio mas comida y le hizo daño \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Avanzar hacia la granja \n2.Comer verduras e intentar llegar a la granja \n3.Tomar agua de un charco muy grande e intentar ir a la granja\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                         cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {    
                         case 1:barras-=3;
-                        cout<<"No avanzo mucho cuando la comida hizo que se desmayaraÂ¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"No avanzo mucho cuando la comida hizo que se desmayara¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=3;
-                        cout<<"Comio las verduras y le dieron justo la energia para llegar, Â¡Logro llegar a la granja!" << std::endl;
+                        cout<<"Comio las verduras y le dieron justo la energia para llegar, ¡Logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Tomo agua del charco pero termino intoxicado, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Tomo agua del charco pero termino intoxicado, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         return 0;
@@ -439,13 +443,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {  
                         case 1:barras-=6;
-                        cout<<"Corrio pero le falto energia y, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Corrio pero le falto energia y, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=3;
-                        cout<<"Hizo la parada y encontro agua que le dio la suficiente energia para llegar y, Â¡Logro llegar a la granja!" << std::endl;
+                        cout<<"Hizo la parada y encontro agua que le dio la suficiente energia para llegar y, ¡Logro llegar a la granja!" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Espero mucho y no reunio la suficiente energia, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Espero mucho y no reunio la suficiente energia, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         	return 0;
@@ -461,13 +465,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         {
                         barras-=2;    
                         case 1:barras-=6;
-                        cout<<"Se levanto pero no llego mu lejos, se quedo sin energia, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Se levanto pero no llego mu lejos, se quedo sin energia, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras+=2;
-                        cout<<"Lo llevo al veterinario pero se encariÃ±o con el que lo atropello y, Â¡Conocio a su neuvo mejor amigo!" << std::endl;
+                        cout<<"Lo llevo al veterinario pero se encariño con el que lo atropello y, ¡Conocio a su neuvo mejor amigo!" << std::endl;
                         break;
                         case 3:barras-=6;
-                        cout<<"Cerro los ojos y lamentablemente, murio, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Cerro los ojos y lamentablemente, murio, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         	return 0;
@@ -483,13 +487,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {  
                         case 1:barras-=6;
-                        cout<<"Se bajo de la granja y se perdio, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Se bajo de la granja y se perdio, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 2:barras-=1;
-                        cout<<"Se quedo arriba de la camioneta y se dio cuenta que iba para su granja, eran animales nuevos , Â¡Logro llegar a la granja y reunirse con sus amigos!" << std::endl;
+                        cout<<"Se quedo arriba de la camioneta y se dio cuenta que iba para su granja, eran animales nuevos , ¡Logro llegar a la granja y reunirse con sus amigos!" << std::endl;
                         break;
                         case 3:barras-=4;
-                        cout<<"Les siguio preguntando pero los estreso y estos lo aventaron fuera de la camioneta, Â¡No logro llegar a la granja!\n Â¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
+                        cout<<"Les siguio preguntando pero los estreso y estos lo aventaron fuera de la camioneta, ¡No logro llegar a la granja!\n ¡Ni modo!\n Quedo con "<<barras<< " barras" << std::endl;
                         break;
                         case 4:
                         	return 0;
@@ -532,13 +536,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             {
                             barras-=2;    
                             case 1:barras-=0;
-                            cout<<"Lo llevaron a proteccion animal y ahÃ­ se va a quedar Â¡No lo logro!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo llevaron a proteccion animal y ahí se va a quedar ¡No lo logro!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Huyo cuando lo bajaron pero no tenia las suficientes barras de energia, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Huyo cuando lo bajaron pero no tenia las suficientes barras de energia, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Le conto a los policias y dijeron que ibas a estar mejor en esa granja que al lugar que te van a llevar \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le conto a los policias y dijeron que ibas a estar mejor en esa granja que al lugar que te van a llevar \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -553,13 +557,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"Confio en el pero el carnicero lo traiciono y no lo llevo a la granja, Â¡No lo logro!\n Â¡Lo hizo carnitas!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Confio en el pero el carnicero lo traiciono y no lo llevo a la granja, ¡No lo logro!\n ¡Lo hizo carnitas!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Te comiste la comida en su casa pero resulto estar envenedada, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Te comiste la comida en su casa pero resulto estar envenedada, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=4;
-                            cout<<"Comio su comida y se dirigio a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comio su comida y se dirigio a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -574,13 +578,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 				        switch(opcionesn)
                             { 
                             case 1:barras-=4;
-                            cout<<"Lo alcanzo y no termino nada bien, Â¡No lo logro!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo alcanzo y no termino nada bien, ¡No lo logro!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se escondio, pero lo encontro y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se escondio, pero lo encontro y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=4;
-                            cout<<"Robo su comida y llego a la granja con la energia que le dio \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Robo su comida y llego a la granja con la energia que le dio \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -603,19 +607,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     switch(opcionesn)
                     {
                     case 1:barras-=1;
-                    cout<<"Entro a otra casa y encontro un bebe solito en peligro \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Cuidar al niÃ±o hasta que llegue alguien \n2.Dejar al niÃ±o y buscar dinero en la casa \n3.Robar su auto e irte a la granja\n4.Salir del programa" << std::endl;
+                    cout<<"Entro a otra casa y encontro un bebe solito en peligro \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Cuidar al niño hasta que llegue alguien \n2.Dejar al niño y buscar dinero en la casa \n3.Robar su auto e irte a la granja\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
 				        switch(opcionesn)
                             {  
                             case 1:barras-=0;
-                            cout<<"Cuido al niÃ±o y llegaron los papas y le agradecieron y a cambio lo llevaron a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Cuido al niño y llegaron los papas y le agradecieron y a cambio lo llevaron a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"No encontro dinero y se salio a la calle pero se perdio y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No encontro dinero y se salio a la calle pero se perdio y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Robo el carro y no tenia gasolina \n Â¡No logro llegar!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Robo el carro y no tenia gasolina \n ¡No logro llegar!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -624,19 +628,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                     break;
                     case 2:barras-=2;
-                    cout<<"Regreso pero el carnicero lo estaba esperando, el sÃ­ sabia que habia ido \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Irse antes que se de cuetnta \n2.Enfrentar al carnicero \n3.Intentar volver a entrar por agua\n4.Salir del programa" << std::endl;
+                    cout<<"Regreso pero el carnicero lo estaba esperando, el sí sabia que habia ido \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Irse antes que se de cuetnta \n2.Enfrentar al carnicero \n3.Intentar volver a entrar por agua\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
 				        switch(opcionesn)
                             {   
                             case 1:barras-=6;
-                            cout<<"Se estaba yendo pero el carnicero lo atrapo, Â¡No lo logro!\n Â¡Termino hecho carnitas!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se estaba yendo pero el carnicero lo atrapo, ¡No lo logro!\n ¡Termino hecho carnitas!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Peleo con el carnicero y perdio, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Peleo con el carnicero y perdio, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=2;
-                            cout<<"Entro por el agua y logro salir de la casa \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Entro por el agua y logro salir de la casa \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -651,13 +655,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 				        switch(opcionesn)
                             {  
                             case 1:barras+=4;
-                            cout<<"Les pidio comida y se la dieron, y aparte lo llevaron a la granja Â¡Lo logro!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Les pidio comida y se la dieron, y aparte lo llevaron a la granja ¡Lo logro!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Dio muchas vueltas pero jamas logro encontrar la granja, y se le acabo la energia Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Dio muchas vueltas pero jamas logro encontrar la granja, y se le acabo la energia ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Se rindio y no encontro la granja \n Â¡No logro llegar!\n Â¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se rindio y no encontro la granja \n ¡No logro llegar!\n ¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -685,13 +689,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 				        switch(opcionesn)
                             {   
                             case 1:barras-=0;
-                            cout<<"El carnicero lo atrapo y conversaron y termino llevandolo a la granja a cambio de decirle quien era el dueÃ±o de la granja Â¡Lo logro!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El carnicero lo atrapo y conversaron y termino llevandolo a la granja a cambio de decirle quien era el dueño de la granja ¡Lo logro!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=5;
-                            cout<<"Encontro mucha comida que se devoro y pudo tener energia para Â¡llegar a la granja!\nÂ¡QuÃ© buena suerte que haya habido comida en ese restaurante abandonado no?!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Encontro mucha comida que se devoro y pudo tener energia para ¡llegar a la granja!\n¡Qué buena suerte que haya habido comida en ese restaurante abandonado no?!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Se lo grito y el carnicero le dijo que parara que lo ayudaria, pero no fue asi, lo capturo y lo hizo chicharron\n Â¡No logro llegar a la granja!\n Â¡No confies en todo lo que te dicen!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se lo grito y el carnicero le dijo que parara que lo ayudaria, pero no fue asi, lo capturo y lo hizo chicharron\n ¡No logro llegar a la granja!\n ¡No confies en todo lo que te dicen!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -706,13 +710,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                             {    
                             case 1:barras-=2;
-                            cout<<"El carnicero lo llevo ya que de ahi, podia hacer trato con el dueÃ±o, Â¡Lo logro!\n Â¡Estuvo feliz con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El carnicero lo llevo ya que de ahi, podia hacer trato con el dueño, ¡Lo logro!\n ¡Estuvo feliz con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"No le dio tiempo al carnicero de hacer el mapa, asi que se fue y se perdio entre las calles Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No le dio tiempo al carnicero de hacer el mapa, asi que se fue y se perdio entre las calles ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Le presto el dinero pero le dijo que si no se lo devolvia, iria por el \n Â¡Logro llegar a la granja!\n Â¡Mas le vale pagarle al carnicero!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le presto el dinero pero le dijo que si no se lo devolvia, iria por el \n ¡Logro llegar a la granja!\n ¡Mas le vale pagarle al carnicero!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -727,13 +731,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                             { 
                             case 1:barras-=6;
-                            cout<<"El carnicero llamo un veterianrio para revisarlo, el veterinario le dijo que estaba bien, y el carnicero se enojo porque le mintio, asi que lo mando para el otro mundo Â¡No lo logro!\n Â¡La verdad siempre sale a la luz!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El carnicero llamo un veterianrio para revisarlo, el veterinario le dijo que estaba bien, y el carnicero se enojo porque le mintio, asi que lo mando para el otro mundo ¡No lo logro!\n ¡La verdad siempre sale a la luz!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=3;
-                            cout<<"El carnicero entendio su caso y lo llevo a la granja y le dio de comer verduras, se hicieron buenos amigos Â¡SÃ­ logro llegar a la granja!\nÂ¡Ahora tiene un nuevo amigo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El carnicero entendio su caso y lo llevo a la granja y le dio de comer verduras, se hicieron buenos amigos ¡Sí logro llegar a la granja!\n¡Ahora tiene un nuevo amigo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"No pudo zafarse y el carnicero al darse cuenta, lo hizo carnitas \n Â¡No logro llegar a la granja!\n Â¡El dialogo es muy importante!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No pudo zafarse y el carnicero al darse cuenta, lo hizo carnitas \n ¡No logro llegar a la granja!\n ¡El dialogo es muy importante!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -777,25 +781,25 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     switch(opcionesn)
                     {
                     case 1:barras-=1;
-                    cout<<"Le gusto mucho la nueva granja \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Intentar hacer nuevos amigos \n2.Espiar al dueÃ±o \n3.Relajarse mas" << std::endl;
+                    cout<<"Le gusto mucho la nueva granja \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Intentar hacer nuevos amigos \n2.Espiar al dueño \n3.Relajarse mas" << std::endl;
                     cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Intento hacer nuevos amigos y lo consiguio aunque le adivirtieron que no era tan buen lugar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse en la granja \n2.Intentar irse \n3.Preguntarles porquÃ©\n4.Salir del programa" << std::endl;
+                        cout<<"Intento hacer nuevos amigos y lo consiguio aunque le adivirtieron que no era tan buen lugar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse en la granja \n2.Intentar irse \n3.Preguntarles porqué\n4.Salir del programa" << std::endl;
  								   cin>>opcionesn;
 			   			   		   cout<<"Elegiste -"<<opcionesn<<""<<endl;
 		   				   		   switch(opcionesn)
       		   			   		   { 
 	                               case 1:
-	                               cout<<"Se quedo en la nueva granja, Â¡Tiene nuevo hogar!\n Â¡Que le vaya bien!\n Quedo con "<<barras<< " barras" << std::endl;
+	                               cout<<"Se quedo en la nueva granja, ¡Tiene nuevo hogar!\n ¡Que le vaya bien!\n Quedo con "<<barras<< " barras" << std::endl;
 	                               break;
 	                               case 2:barras-=6;
-	                               cout<<"Intento irse pero justo antes de salir lo agarraron, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+	                               cout<<"Intento irse pero justo antes de salir lo agarraron, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
 	                               break;
 	                               case 3:barras-=0;
-	                               cout<<"Les pregunto porquÃ© y ellos le dijeron que pronto lo averiguaria \n Â¡Quedo atrapado!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+	                               cout<<"Les pregunto porqué y ellos le dijeron que pronto lo averiguaria \n ¡Quedo atrapado!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
 	                               break;
 	                               case 4:
 	                               return 0;
@@ -804,19 +808,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 	                               }
                         break;
                         case 2:barras-=1;
-                        cout<<"Espio al dueÃ±o y resulto no ser tan buen lugar, el dueÃ±o era malo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a contarle a los otros animales \n2.Intentar huir solo inmediatamente \n3.Quedarse aun asÃ­\n4.Salir del programa" << std::endl;
+                        cout<<"Espio al dueño y resulto no ser tan buen lugar, el dueño era malo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a contarle a los otros animales \n2.Intentar huir solo inmediatamente \n3.Quedarse aun así\n4.Salir del programa" << std::endl;
            					 cin>>opcionesn;
             				 cout<<"Elegiste -"<<opcionesn<<""<<endl;
             				 switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Le conto a los otros animales pero ellos le contestaron que ya sabian y quedo atrapado Pascal, Â¡Espera el fin!\n Â¡Atrapado quedo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le conto a los otros animales pero ellos le contestaron que ya sabian y quedo atrapado Pascal, ¡Espera el fin!\n ¡Atrapado quedo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Intento huir y lo logro aunque se le acabaron las barras de energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento huir y lo logro aunque se le acabaron las barras de energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-0;
-                            cout<<"Se quedo en la nueva granja a pesar de las advertencias, Â¡Tiene nuevo hogar!\n Â¡Que le vaya bien...!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo en la nueva granja a pesar de las advertencias, ¡Tiene nuevo hogar!\n ¡Que le vaya bien...!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -831,13 +835,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
             				 switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Le hablo a los demas animales y estos le dijeron que ya se quedaria ahi para siempre Â¡No llego con sus amigos!\n Â¡Lo llevaron a su prision!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le hablo a los demas animales y estos le dijeron que ya se quedaria ahi para siempre ¡No llego con sus amigos!\n ¡Lo llevaron a su prision!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=2;
-                            cout<<"Comio pero cuando quiso salir de la granja ya no se lo permitieron Â¡No logro llegar a la granja!\nÂ¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comio pero cuando quiso salir de la granja ya no se lo permitieron ¡No logro llegar a la granja!\n¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Se quedo en su nuevo hogar \n Â¡Ahora tiene amigos nuevos!\n Â¡Quedo atrapado en esa granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo en su nuevo hogar \n ¡Ahora tiene amigos nuevos!\n ¡Quedo atrapado en esa granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -852,7 +856,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                     break;
                     case 2:barras-=1;
-                    cout<<"Ideo el plan para escapar pero mientras lo hacia se dio cuenta que aquÃ­ tenia mejor lugar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir con el plan \n2.Probar que mas tiene la granja \n3.Hablarle al nuevo cerdo que llevaron\n4.Salir del programa" << std::endl;
+                    cout<<"Ideo el plan para escapar pero mientras lo hacia se dio cuenta que aquí tenia mejor lugar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir con el plan \n2.Probar que mas tiene la granja \n3.Hablarle al nuevo cerdo que llevaron\n4.Salir del programa" << std::endl;
                     cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
@@ -864,13 +868,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
             				 switch(opcionesn)
                             { 
                             case 1: barras-=1;
-                            cout<<"El siguÃ­ con su plan y se fue a su granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El siguí con su plan y se fue a su granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Se dejo llevar por la nueva granja y termino decidiendo quedarse Â¡No logro llegar a la granja!\nÂ¡Tiene un nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se dejo llevar por la nueva granja y termino decidiendo quedarse ¡No logro llegar a la granja!\n¡Tiene un nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Pregunto a los otros animales y se dio cuenta que nadamas fue puro cuento, y descubrio la verdad de esa granja \n Â¡No logro llegar con sus amigos!\n Â¡Lo atraparon en la nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Pregunto a los otros animales y se dio cuenta que nadamas fue puro cuento, y descubrio la verdad de esa granja \n ¡No logro llegar con sus amigos!\n ¡Lo atraparon en la nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -879,19 +883,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 2:barras-=2;
-                        cout<<"Probo todas las funciones de la granja y es la mejor granja que ha conocido y no sabe si extraÃ±a a sus amigos \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse en la nueva granja \n2.Empezar a hablarle a los demas animales \n3.Irse a su granja con sus amigos\n4.Salir del programa" <<endl;
+                        cout<<"Probo todas las funciones de la granja y es la mejor granja que ha conocido y no sabe si extraña a sus amigos \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse en la nueva granja \n2.Empezar a hablarle a los demas animales \n3.Irse a su granja con sus amigos\n4.Salir del programa" <<endl;
                 		cin>>opcionesn;
             				 cout<<"Elegiste -"<<opcionesn<<""<<endl;
             				 switch(opcionesn)
                             {  
                             case 1:barras-=0;
-                            cout<<"Se dejo envovler por todo lo que tiene la nueva granja y ahi se quedo Â¡No lo logro!\n Â¡Lo habian engaÃ±ado en su nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se dejo envovler por todo lo que tiene la nueva granja y ahi se quedo ¡No lo logro!\n ¡Lo habian engañado en su nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Al momento de hablarle a los demas animales se dio cuenta de su error pues todos querian salir de ahi Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Al momento de hablarle a los demas animales se dio cuenta de su error pues todos querian salir de ahi ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Intento salir de la granja pero se dio cuenta que es casi imposible, ya que las entradas estan revisadas siempre \n Â¡No logro llegar!\n Â¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento salir de la granja pero se dio cuenta que es casi imposible, ya que las entradas estan revisadas siempre \n ¡No logro llegar!\n ¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -906,13 +910,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
             				 switch(opcionesn)
                             {  
                             case 1:barras-=0;
-                            cout<<"Se resigno y acepto que jamas saldria de ahi, Â¡No lo logro!\n Â¡Le habian lavado la mente!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se resigno y acepto que jamas saldria de ahi, ¡No lo logro!\n ¡Le habian lavado la mente!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Intentaron escapar por medio de un tunel y, Â¡Lo lograron, llegaron a la superficie!\nÂ¡Pero Pascal no tuvo la suficiente energia para ir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intentaron escapar por medio de un tunel y, ¡Lo lograron, llegaron a la superficie!\n¡Pero Pascal no tuvo la suficiente energia para ir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=2;
-                            cout<<"Iba a escapar solo pero al momento de atravesar las puertas lo atraparon \n Â¡No logro escapar!\n Â¡Ahora esta atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Iba a escapar solo pero al momento de atravesar las puertas lo atraparon \n ¡No logro escapar!\n ¡Ahora esta atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -939,13 +943,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 							switch(opcionesn)
                             {   
                             case 1:
-                            cout<<"No les creyo y siguio disfrutando de su nuevo hogar Â¡No logro llegar a la granja!\n Â¡Ahora tiene un nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No les creyo y siguio disfrutando de su nuevo hogar ¡No logro llegar a la granja!\n ¡Ahora tiene un nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:
-                            cout<<"Se quedo, aunque preocupado por las advertencias, pero ya habia tomado la decision Â¡No logro llegar a la granja!\nÂ¡Esta atrapado y no lo sabe!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo, aunque preocupado por las advertencias, pero ya habia tomado la decision ¡No logro llegar a la granja!\n¡Esta atrapado y no lo sabe!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Intento salir pero rapidamente lo capturaron y volvieron a meter a la granja \n Â¡Era verdad!\n Â¡Ha quedado atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento salir pero rapidamente lo capturaron y volvieron a meter a la granja \n ¡Era verdad!\n ¡Ha quedado atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -960,13 +964,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 							switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Hablo con el gallo, quien le conto que ahora no iba a poder salir de la granja y es por eso que los otros animales no querian decirselo, Â¡No lo logro!\n Â¡Resulto ser una estafa!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Hablo con el gallo, quien le conto que ahora no iba a poder salir de la granja y es por eso que los otros animales no querian decirselo, ¡No lo logro!\n ¡Resulto ser una estafa!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:
-                            cout<<"Decicio ignorar al gallo y poder seguir disfrutando de su nuevo hogar, Â¡No logro llegar a la granja!\nÂ¡Que disfrute su nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Decicio ignorar al gallo y poder seguir disfrutando de su nuevo hogar, ¡No logro llegar a la granja!\n¡Que disfrute su nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=2;
-                            cout<<"Ataco al gallo y lo metieron a un pozo, al parecer en esa granja habia castigos \n Â¡No ogro llegar con sus amigos!\n Â¡Esa granja no era lo que parecia!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ataco al gallo y lo metieron a un pozo, al parecer en esa granja habia castigos \n ¡No ogro llegar con sus amigos!\n ¡Esa granja no era lo que parecia!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -981,13 +985,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 							switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"Salio de la granja pero se quedo sin energia a mitad del camino, Â¡No logro llegar a la granja!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Salio de la granja pero se quedo sin energia a mitad del camino, ¡No logro llegar a la granja!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Volvio entrar a la granja y esta vez ya no pudo salir, Â¡No logro llegar a la granja!\nÂ¡Que disfrute su nuevo hogar?!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Volvio entrar a la granja y esta vez ya no pudo salir, ¡No logro llegar a la granja!\n¡Que disfrute su nuevo hogar?!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=5;
-                            cout<<"Entro por comida, tomo toda la que pudo, se salio y fue hacia su granja \n Â¡Logro llegar con sus amigos!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Entro por comida, tomo toda la que pudo, se salio y fue hacia su granja \n ¡Logro llegar con sus amigos!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1029,13 +1033,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:
-                            cout<<"Le conto a la chica y esta se conmovio y lo llevo a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le conto a la chica y esta se conmovio y lo llevo a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se escapo, pero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se escapo, pero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"La chica al principio se enojo por el desastre que hizo pero al saber la historia lo comprendio y lo llevo a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La chica al principio se enojo por el desastre que hizo pero al saber la historia lo comprendio y lo llevo a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1051,13 +1055,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:
-                            cout<<"Se dejo y se encariÃ±o con la chava, Â¡No logro llegar a la granja!\n Â¡Conocio su nueva dueÃ±a y hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se dejo y se encariño con la chava, ¡No logro llegar a la granja!\n ¡Conocio su nueva dueña y hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"La volvio a morder y se escapo, no llego muy lejos por falta de energia Â¡No logro llegar a la granja!\nÂ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La volvio a morder y se escapo, no llego muy lejos por falta de energia ¡No logro llegar a la granja!\n¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"Le explico su situacion y la chica le dio los cuidados y lo llevo a la granja \n Â¡SÃ­ logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le explico su situacion y la chica le dio los cuidados y lo llevo a la granja \n ¡Sí logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1073,13 +1077,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Regreso arrepentido y la chava lo noto y lo ayudo a reunirse con sus amigos, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Regreso arrepentido y la chava lo noto y lo ayudo a reunirse con sus amigos, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Busco comida pero no encontro y termino por quedarse sin energia Â¡No logro llegar a la granja!\nÂ¡Que mala onda!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Busco comida pero no encontro y termino por quedarse sin energia ¡No logro llegar a la granja!\n¡Que mala onda!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"No aguanto mas el dolor y decidio dormirse y, \n Â¡No logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No aguanto mas el dolor y decidio dormirse y, \n ¡No logro llegar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1099,19 +1103,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {
                         case 1:barras-=0;
-                        cout<<"Los demas cerditos lo miraban raro \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a preguntarles que pasa \n2.Ingorarlos y comer la comida tan rica que dan ahÃ­ \n3.Comer e intentar irse a su granja\n4.Salir del programa" << std::endl;
+                        cout<<"Los demas cerditos lo miraban raro \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a preguntarles que pasa \n2.Ingorarlos y comer la comida tan rica que dan ahí \n3.Comer e intentar irse a su granja\n4.Salir del programa" << std::endl;
                         cin>>opcionesn;
                         cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {
                             case 1:barras-=1;
-                            cout<<"Los cerdos le contaron lo que pasa en esa granja, y fue cuando se dio cuenta que habia cometido un error Â¡No logro ir con sus amigos!\n Â¡Quedo atrapado en esa comoda granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Los cerdos le contaron lo que pasa en esa granja, y fue cuando se dio cuenta que habia cometido un error ¡No logro ir con sus amigos!\n ¡Quedo atrapado en esa comoda granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=5;
-                            cout<<"Decidio quedarse y comer toda la comida que le ponen Â¡No logro llegar a la granja!\nÂ¡Esta muy contento con la nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Decidio quedarse y comer toda la comida que le ponen ¡No logro llegar a la granja!\n¡Esta muy contento con la nueva granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=1;
-                            cout<<"Una vez que acabo de comer, vio una puerta abierta y se subio a otra camienta que lo llevo a la granja \n Â¡Logro llegar con sus amigos!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Una vez que acabo de comer, vio una puerta abierta y se subio a otra camienta que lo llevo a la granja \n ¡Logro llegar con sus amigos!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1126,13 +1130,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {
                             case 1:barras-=0;
-                            cout<<"Le compartio a los otros cerditos ya que vio que ellos no tenian comida, y estos le contaron que asi es al pricnipio y despues los empiezan a maltratar Â¡No logro llegar a la granja!\n Â¡En que lugar se metio!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le compartio a los otros cerditos ya que vio que ellos no tenian comida, y estos le contaron que asi es al pricnipio y despues los empiezan a maltratar ¡No logro llegar a la granja!\n ¡En que lugar se metio!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=3;
-                            cout<<"Comio solito y nadie mas le hablo, pero el disfruta su estancia Â¡No logro llegar a la granja!\nÂ¡Esta contento con su nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comio solito y nadie mas le hablo, pero el disfruta su estancia ¡No logro llegar a la granja!\n¡Esta contento con su nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Ya se iba de la granja cuando fue sorprendido, y vio que no seria tan facil, mordio al que lo trato de agarrar y escapo \n Â¡Logro llegar a la granja con sus amigos!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ya se iba de la granja cuando fue sorprendido, y vio que no seria tan facil, mordio al que lo trato de agarrar y escapo \n ¡Logro llegar a la granja con sus amigos!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1147,13 +1151,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Les pregunto y estos le dijeron la verdad sobre todo el lugar y que al final los ocupan paora cosas malas Â¡No logro llegar a la granja!\n Â¡Ya no hay forma de salir!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Les pregunto y estos le dijeron la verdad sobre todo el lugar y que al final los ocupan paora cosas malas ¡No logro llegar a la granja!\n ¡Ya no hay forma de salir!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se fue, pero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue, pero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Se siente tan agusto en su nueva granja \n Â¡Nuevo hogar!\n Â¡Que le dure mucho el gusto...!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se siente tan agusto en su nueva granja \n ¡Nuevo hogar!\n ¡Que le dure mucho el gusto...!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1168,25 +1172,25 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                     break;
                     case 3:barras-=2;
-                    cout<<"Volvio con el que lo recogio y este lo levanto e hizo todo el papeleo para dejarlo ahÃ­ \n Quedo con "<<barras<< " barras \n Elige su proxima accion \n1.Aceptarlo y actuar bien portado \n2.Soltarse y buscar su carro \n3.Morderlo y escapar\n4.Salir del programa" << std::endl;
+                    cout<<"Volvio con el que lo recogio y este lo levanto e hizo todo el papeleo para dejarlo ahí \n Quedo con "<<barras<< " barras \n Elige su proxima accion \n1.Aceptarlo y actuar bien portado \n2.Soltarse y buscar su carro \n3.Morderlo y escapar\n4.Salir del programa" << std::endl;
                         cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Actuo muy bien portado y al entrar a la granja quedo fascinado, era tan increible \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse a vivir ahÃ­ mejor \n2.Comer lo suficiente para irse a su granja con sus amigos \n3.Intentar hacer nuevos amigos y si no irse de ahi\n4.Salir del programa" << std::endl;
+                        cout<<"Actuo muy bien portado y al entrar a la granja quedo fascinado, era tan increible \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Quedarse a vivir ahí mejor \n2.Comer lo suficiente para irse a su granja con sus amigos \n3.Intentar hacer nuevos amigos y si no irse de ahi\n4.Salir del programa" << std::endl;
                         cin>>opcionesn;
                         cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:barras+=2;
-                            cout<<"Se quedo a disfrutar de la comida y la comdidad que le brinda, Â¡No logro llegar a la granja!\n Â¡Ahora es mas feliz!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo a disfrutar de la comida y la comdidad que le brinda, ¡No logro llegar a la granja!\n ¡Ahora es mas feliz!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=5;
-                            cout<<"Comio mucho y se fue, encontro la salida y nadie lo vio salir y se fue a la granja, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comio mucho y se fue, encontro la salida y nadie lo vio salir y se fue a la granja, ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Le hablo a otros animales y le revelaron que la granja era mu mala, que con el pasar del tiempo los van maltratando y haciendo cosas raras con ellos \n Â¡Ya no pudo escapar!\n Â¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le hablo a otros animales y le revelaron que la granja era mu mala, que con el pasar del tiempo los van maltratando y haciendo cosas raras con ellos \n ¡Ya no pudo escapar!\n ¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1201,13 +1205,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Se fue a la granja y aunque ya asi llegando se quedo sin gasolina pudo ontinuar a pata Â¡Lo logro, llego con sus amigos!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue a la granja y aunque ya asi llegando se quedo sin gasolina pudo ontinuar a pata ¡Lo logro, llego con sus amigos!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se escapo con las llaves, pero se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se escapo con las llaves, pero se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Eso fue muy malvado pero a Pascal no le sirvio de nada ya que no tenia la energia suficiente y se perdio en el bosque \n Â¡No logro llegar a la granja!\n Â¡No seas tan rencoroso!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Eso fue muy malvado pero a Pascal no le sirvio de nada ya que no tenia la energia suficiente y se perdio en el bosque \n ¡No logro llegar a la granja!\n ¡No seas tan rencoroso!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1222,13 +1226,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             switch(opcionesn)
                             {   
                             case 1:barras-=6;
-                            cout<<"Se hidrato muy bien pero no le alcanzaron las calorias para continuar, Â¡No lo logro!\n Â¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se hidrato muy bien pero no le alcanzaron las calorias para continuar, ¡No lo logro!\n ¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Las verduras no le aportaron la suficiente energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Las verduras no le aportaron la suficiente energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=6;
-                            cout<<"Bien pensado, tuvo energia de sobra para poder correr hacia la granja \n Â¡Logro llegar a la granja con sus amigos!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Bien pensado, tuvo energia de sobra para poder correr hacia la granja \n ¡Logro llegar a la granja con sus amigos!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1270,13 +1274,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {  
                             case 1:barras-=0;
-                            cout<<"Siguieron la ruta y lo llevo a la granja, Â¡Lo logro!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguieron la ruta y lo llevo a la granja, ¡Lo logro!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Le dijo que ya no lo iban a aceptar asi que lo fue a dejar a la granja Â¡SÃ­ logro llegar a la granja!\nÂ¡No era lo que queria!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le dijo que ya no lo iban a aceptar asi que lo fue a dejar a la granja ¡Sí logro llegar a la granja!\n¡No era lo que queria!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Le pidio un poco de comida pero el se la nego, se enojaron y Pascal de bajo del carro, ya no pudo conitnuar, se quedo sin energia \n Â¡No logro llegar!\n Â¡Estuvo tan cerca!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le pidio un poco de comida pero el se la nego, se enojaron y Pascal de bajo del carro, ya no pudo conitnuar, se quedo sin energia \n ¡No logro llegar!\n ¡Estuvo tan cerca!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1291,13 +1295,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {
                             case 1:barras-=6;
-                            cout<<"No encontro algo y solo le salio un animal que lo persiguio hasta araparlo, Â¡No lo logro!\n Â¡Sus amigos se quedaron esperando!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No encontro algo y solo le salio un animal que lo persiguio hasta araparlo, ¡No lo logro!\n ¡Sus amigos se quedaron esperando!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Siguio caminando, pero se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio caminando, pero se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=5;
-                            cout<<"El agua era muy buena y le dio mucha energia, asi que corrio hacia la granja \n Â¡SÃ­ logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El agua era muy buena y le dio mucha energia, asi que corrio hacia la granja \n ¡Sí logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1312,13 +1316,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             { 
                             case 1:barras+=2;
-                            cout<<"Le robo la comida y junto la suficiente energia para correr y lelgar a la granja, Â¡Lo logro!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le robo la comida y junto la suficiente energia para correr y lelgar a la granja, ¡Lo logro!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se bajo del auto y empezo a caminar pero le hizo falta energia Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se bajo del auto y empezo a caminar pero le hizo falta energia ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Le dibujo el mapa con la ruta mas corta y si alcanzo a llegar \n Â¡Logro llegar!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le dibujo el mapa con la ruta mas corta y si alcanzo a llegar \n ¡Logro llegar!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1333,25 +1337,25 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                     break;
                     case 2:barras-=1;
-                    cout<<"Se relajo y le gusto de mas la nueva granja, es muy comoda y espaciosa \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Espiar al dueÃ±o \n2.Salirse e irse \n3.Empezar a conocer animales\n4.Salir del programa" << endl;
+                    cout<<"Se relajo y le gusto de mas la nueva granja, es muy comoda y espaciosa \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Espiar al dueño \n2.Salirse e irse \n3.Empezar a conocer animales\n4.Salir del programa" << endl;
 					    cin>>opcionesn;
                 		cout<<"Elegiste -"<<opcionesn<<""<<endl;
 						switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Espio al dueÃ±o y descubrio que tramaba algo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirle a los demas animales \n2.Salvarse solo \n3.Quedarse en la granja\n4.Salir del programa" << std::endl;
+                        cout<<"Espio al dueño y descubrio que tramaba algo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirle a los demas animales \n2.Salvarse solo \n3.Quedarse en la granja\n4.Salir del programa" << std::endl;
                 		cin>>opcionesn;
                     	    cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Se lo conto a los demas animales y estos iniciaron una revolucion, el dueÃ±o termino huyendo Â¡Lo logro, salvo la nueva granja!\n Â¡Hurra!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se lo conto a los demas animales y estos iniciaron una revolucion, el dueño termino huyendo ¡Lo logro, salvo la nueva granja!\n ¡Hurra!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se escapo, pero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se escapo, pero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Sus amigos se quedaron esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"Se quedo en la granja, apesar de lo que escucho, ya despues se las arreglara \n Â¡No logro llegar a la granja!\n Â¡Ahora tiene nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo en la granja, apesar de lo que escucho, ya despues se las arreglara \n ¡No logro llegar a la granja!\n ¡Ahora tiene nuevo hogar!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1366,13 +1370,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"Ese era un camino incorrecto, intento cruzar el bosque pero no salio vivo Â¡No lo logro!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ese era un camino incorrecto, intento cruzar el bosque pero no salio vivo ¡No lo logro!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Ese era un camino incorrecto, intento rodear el rio pero se termino cayendo al agua Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ese era un camino incorrecto, intento rodear el rio pero se termino cayendo al agua ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=5;
-                            cout<<"Ese era el camino correcto, la energia apenas y le alcanzo \n Â¡Logro llegar!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ese era el camino correcto, la energia apenas y le alcanzo \n ¡Logro llegar!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1387,13 +1391,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             { 
                             case 1:barras-=0;
-                            cout<<"Se sintio muy agusto y se quedo a dsifrutar esa granja Â¡Tiene hogar nuevo!\n Â¡Los cambios tambien son buenos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se sintio muy agusto y se quedo a dsifrutar esa granja ¡Tiene hogar nuevo!\n ¡Los cambios tambien son buenos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Los invito pero no quisieron ir y lo obligaron a quedarse en la suya Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Los invito pero no quisieron ir y lo obligaron a quedarse en la suya ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=2;
-                            cout<<"Se fue y tomo el camino correcto \n Â¡Logro llegar!\n Â¡Esta muy feliz con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue y tomo el camino correcto \n ¡Logro llegar!\n ¡Esta muy feliz con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1420,13 +1424,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {
                             case 1:barras-=6;
-                            cout<<"Se fue por el camino con niebla y cayo en un pozo muy grande Â¡No lo logro!\n Â¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue por el camino con niebla y cayo en un pozo muy grande ¡No lo logro!\n ¡Quedo atrapado!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se fue por el desierto pero hacia mucho calor y se quedo sin energia  Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue por el desierto pero hacia mucho calor y se quedo sin energia  ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"La carretera era la ruta perfecta \n Â¡Logro llegar!\n Â¡Se volvio a reunir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La carretera era la ruta perfecta \n ¡Logro llegar!\n ¡Se volvio a reunir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1435,19 +1439,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 2:barras-=1;
-                        cout<<"Hablo con los otros cerdos y se lelvaron muy bien \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirles que luego vendra a visitarlos y que se va a su granja \n2.Quedarse con ellos \n3.Decirles que lo acompaÃ±en a su granja\n4.Salir del programa" << std::endl;
+                        cout<<"Hablo con los otros cerdos y se lelvaron muy bien \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Decirles que luego vendra a visitarlos y que se va a su granja \n2.Quedarse con ellos \n3.Decirles que lo acompañen a su granja\n4.Salir del programa" << std::endl;
                 		cin>>opcionesn;
                     	    cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Se fue y no volvera a verlos, llego a la granja Â¡Lo logro!\n Â¡Sus amigos lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue y no volvera a verlos, llego a la granja ¡Lo logro!\n ¡Sus amigos lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:
-                            cout<<"Se quedo con ellos y olvido a sus amigos de la otra granja Â¡No logro llegar a la granja!\nÂ¡Pobre de sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo con ellos y olvido a sus amigos de la otra granja ¡No logro llegar a la granja!\n¡Pobre de sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Aceptaron acompaÃ±arte y se quedaron contigo, les presentaste los nuevos animales a tus amigos \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Aceptaron acompañarte y se quedaron contigo, les presentaste los nuevos animales a tus amigos \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1462,13 +1466,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     	    switch(opcionesn)
                             {
                             case 1:barras-=1;
-                            cout<<"Si le alcanzo la energia y les hizo mucho mejor la vida a sus amigos Â¡Lo logro!\n Â¡Todos estan muy contentos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Si le alcanzo la energia y les hizo mucho mejor la vida a sus amigos ¡Lo logro!\n ¡Todos estan muy contentos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Siguio buscando cosas y no logro encontrar mas, quedo sin alimento y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio buscando cosas y no logro encontrar mas, quedo sin alimento y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Se fue corriendo y llego muy rapido a la granja \n Â¡Si logro llegar!\n Â¡Lo que improta es la amistad!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue corriendo y llego muy rapido a la granja \n ¡Si logro llegar!\n ¡Lo que improta es la amistad!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1505,7 +1509,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
             switch(opcionesn)
             {
             case 1:barras-=1;
-            cout<<"Busco comida en la casa pero encontro mucho dinero \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Caminar hacia otro lugar para poder comprar comida y un taxi hacia la granja \n2.Dejar el dinero ahÃ­ (no vaya a estar maldito) y seguir buscando comida \n3.Guardar el dinero y buscar comida\n4.Salir del programa" << std::endl;
+            cout<<"Busco comida en la casa pero encontro mucho dinero \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Caminar hacia otro lugar para poder comprar comida y un taxi hacia la granja \n2.Dejar el dinero ahí (no vaya a estar maldito) y seguir buscando comida \n3.Guardar el dinero y buscar comida\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.3.1
@@ -1524,13 +1528,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {    
                             case 1:barras-=6;
-                            cout<<"Tiro la verdura y no logro encontrar la granja, Â¡No lo logro!\n Â¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Tiro la verdura y no logro encontrar la granja, ¡No lo logro!\n ¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=3;
-                            cout<<"La guardo y la ocupo mas adelante, esas verduras lo ayudaron a encontrar la granja, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La guardo y la ocupo mas adelante, esas verduras lo ayudaron a encontrar la granja, ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=4;
-                            cout<<"El agua fue suficiente para poder encontrar la granja, apenas y llego \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El agua fue suficiente para poder encontrar la granja, apenas y llego \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1545,13 +1549,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {   
                             case 1:barras-=1;
-                            cout<<"Se fue a la granja y llego sin problemas, aun le sobro dinero, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue a la granja y llego sin problemas, aun le sobro dinero, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Los tramites son muy largos y cansados Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Los tramites son muy largos y cansados ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=5;
-                            cout<<"Se fue caminando y paso por comida para el, para sus amigos, les llevo juguetes y monton de cosas mas \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue caminando y paso por comida para el, para sus amigos, les llevo juguetes y monton de cosas mas \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1566,13 +1570,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras-=0;
-                            cout<<"Le pago casi el carro al taxista pero este lo llevo y hasta pasaron por comida, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le pago casi el carro al taxista pero este lo llevo y hasta pasaron por comida, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se pelearon contra el que los choco y Pascal quedo en muy mal estado, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se pelearon contra el que los choco y Pascal quedo en muy mal estado, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"Se bajo y dejo el problema atras, el nuevo taxi lo llevo sin problema a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se bajo y dejo el problema atras, el nuevo taxi lo llevo sin problema a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1599,13 +1603,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
               			  	 switch(opcionesn)
                             {  
                             case 1:barras+=5;
-                            cout<<"Abro el mapa en el celular y con este se guio para llegar a la granja, mientras comia lo que habia guardado, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Abro el mapa en el celular y con este se guio para llegar a la granja, mientras comia lo que habia guardado, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Guardo el celular que en un momento se le cayo y no se fijo, por estar buscando bebidas se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Guardo el celular que en un momento se le cayo y no se fijo, por estar buscando bebidas se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Ignoro el celular y con la comida que tenia se fue a buscar la granja, al parecer estaba muy lejos para ir caminando \n Â¡No logro llegar!\n Â¡Es mejor usar ruedas!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Ignoro el celular y con la comida que tenia se fue a buscar la granja, al parecer estaba muy lejos para ir caminando \n ¡No logro llegar!\n ¡Es mejor usar ruedas!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1620,13 +1624,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras-=6;
-                            cout<<"Quedo muy tocado por la alergia y facilmente se desmaya y no puede continuar con el recorrido Â¡No lo logro!\n Â¡QuÃ© mala surte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Quedo muy tocado por la alergia y facilmente se desmaya y no puede continuar con el recorrido ¡No lo logro!\n ¡Qué mala surte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Se fue en la bicicleta, fue mas rapido,  Â¡Logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue en la bicicleta, fue mas rapido,  ¡Logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Fue al veterinario pero no habia las suficientes cosas para curarse, asi que termina por quedarse dormido \n Â¡No logro llegar!\n Â¡QuÃ© mal plan:(!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Fue al veterinario pero no habia las suficientes cosas para curarse, asi que termina por quedarse dormido \n ¡No logro llegar!\n ¡Qué mal plan:(!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1641,13 +1645,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {   
                             case 1:barras-=1;
-                            cout<<"Encontro el celular y llamo a los bomberos, llegaron y resulto que no ahbai ningun incendio, Â¡Todo fue una imaginacion!\n Â¡Ten cuidado donde caes!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Encontro el celular y llamo a los bomberos, llegaron y resulto que no ahbai ningun incendio, ¡Todo fue una imaginacion!\n ¡Ten cuidado donde caes!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Intento llegar a una ciudad habitada pero ya no podia salir del pueblo abandonado Â¡Se quedo atrapado en el!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento llegar a una ciudad habitada pero ya no podia salir del pueblo abandonado ¡Se quedo atrapado en el!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"Logro despertar del sueÃ±o pero se quedo en el mismo lugar donde estaba \n Â¡No logro llegar!\n Â¡No tomes sueÃ±os tan profundos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Logro despertar del sueño pero se quedo en el mismo lugar donde estaba \n ¡No logro llegar!\n ¡No tomes sueños tan profundos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1674,13 +1678,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {
                             case 1:barras-=2;
-                            cout<<"Con la energia que le dieron las verduras encontro rapidamente la granja Â¡Lo logro!\n Â¡Las verduras eran magicas!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Con la energia que le dieron las verduras encontro rapidamente la granja ¡Lo logro!\n ¡Las verduras eran magicas!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Fue a la tienda y encontro un patin electrico en el que se fue pero se acabo la bateria y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Fue a la tienda y encontro un patin electrico en el que se fue pero se acabo la bateria y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Se dirigio a la avenida a atacar a un conductor para quitarle el carro e irse a la granja pero termino atropellado \n Â¡No logro llegar!\n Â¡No te aloques tanto!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se dirigio a la avenida a atacar a un conductor para quitarle el carro e irse a la granja pero termino atropellado \n ¡No logro llegar!\n ¡No te aloques tanto!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1695,13 +1699,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras+=3;
-                            cout<<"Comenzo el viaje pero se gasto todas las aguas porque la granja quedaba muy lejos, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comenzo el viaje pero se gasto todas las aguas porque la granja quedaba muy lejos, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Al dejar las demas no tuvo la suficiente energia para seguir y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Al dejar las demas no tuvo la suficiente energia para seguir y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"No tuvo la suficiente energia para llegar a la granja \n Â¡No logro llegar!\n Â¡Hay que planear bien los viajes!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No tuvo la suficiente energia para llegar a la granja \n ¡No logro llegar!\n ¡Hay que planear bien los viajes!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1716,13 +1720,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras+=6;
-                            cout<<"Eran verduras magicas y la unica que comio le basto para llenar su barra de energia y llegar a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Eran verduras magicas y la unica que comio le basto para llenar su barra de energia y llegar a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Reviso las verduras y vio que brillaban, fue ahÃ­ cuando descubrio que eran magicas pero se espanto y las tiro lo que provoco que no tuviera energia para llegar a la granja, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Reviso las verduras y vio que brillaban, fue ahí cuando descubrio que eran magicas pero se espanto y las tiro lo que provoco que no tuviera energia para llegar a la granja, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Intento llegar sin consumir las verduras pero no tenia energia y cuando quiso comer una se dio cuenta que se le habian caido \n Â¡No logro llegar!\n Â¡Aprovecha la comida cuando la tienes enfrente!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento llegar sin consumir las verduras pero no tenia energia y cuando quiso comer una se dio cuenta que se le habian caido \n ¡No logro llegar!\n ¡Aprovecha la comida cuando la tienes enfrente!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1743,7 +1747,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 }
             break;
             case 2:barras-=1;
-            cout<<"En la chochera encontro una bicicleta vieja que le hace falta aceite \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Salir a la carretera para poder encontrar alguien y que arregle la bicicleta \n2.Dejar la bicicleta ahÃ­ y seguir alimentandose para irse \n3.Buscar el aceite\n4.Salir del programa" << std::endl;
+            cout<<"En la chochera encontro una bicicleta vieja que le hace falta aceite \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Salir a la carretera para poder encontrar alguien y que arregle la bicicleta \n2.Dejar la bicicleta ahí y seguir alimentandose para irse \n3.Buscar el aceite\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.3.1
@@ -1756,19 +1760,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
                         {
                         case 1:barras-=0;
-                        cout<<"Confio en el adolescente y este le dejo un mapa y la bicicleta arreglada \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Darle las gracias y darle su unica botella de agua \n2.Mientras lo hacia, alejarse de el \n3.Preguntarle porquÃ© le ayudo\n4.Salir del programa" << std::endl;
+                        cout<<"Confio en el adolescente y este le dejo un mapa y la bicicleta arreglada \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Darle las gracias y darle su unica botella de agua \n2.Mientras lo hacia, alejarse de el \n3.Preguntarle porqué le ayudo\n4.Salir del programa" << std::endl;
 	  							  cin>>opcionesn;
                     			  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {
                             case 1:barras-=1;
-                            cout<<"Con la bicileta arreglada y el mapa fue mas facil llegar Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Con la bicileta arreglada y el mapa fue mas facil llegar ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se alejo de el pero no encontro nadamas y sin energia no hizo nada y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se alejo de el pero no encontro nadamas y sin energia no hizo nada y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Le pregunto porque le ayudo y el adolescente solo contesto que hay que ahcer el bien, Pascal llego en la bicicleta a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le pregunto porque le ayudo y el adolescente solo contesto que hay que ahcer el bien, Pascal llego en la bicicleta a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1783,13 +1787,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras-=1;
-                            cout<<"Confio en el y el chico le dio todo lo necesario para llegar a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Confio en el y el chico le dio todo lo necesario para llegar a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Lo rechazo y como venganza el chico le quito toda la comida, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo rechazo y como venganza el chico le quito toda la comida, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Lo mordio y el chico por querer empujarlo termino por dejarlo caer sobre una esquina filosa y Pascal murio \n Â¡No logro llegar!\n Â¡Por quÃ© atacarlo?!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo mordio y el chico por querer empujarlo termino por dejarlo caer sobre una esquina filosa y Pascal murio \n ¡No logro llegar!\n ¡Por qué atacarlo?!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1798,19 +1802,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 3:barras-=1;
-                        cout<<"Le pidio que lo llevara pero el adolescente le dijo que no podia, que solo podia ayudarlo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Preguntarle por quÃ© no podia \n2.Correrlo \n3.Aceptar su ayuda y ponerle gasolina a la motoicleta que estaba estacionada afuera de la casa\n4.Salir del programa" << std::endl;
+                        cout<<"Le pidio que lo llevara pero el adolescente le dijo que no podia, que solo podia ayudarlo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Preguntarle por qué no podia \n2.Correrlo \n3.Aceptar su ayuda y ponerle gasolina a la motoicleta que estaba estacionada afuera de la casa\n4.Salir del programa" << std::endl;
       				  			  cin>>opcionesn;
                     			  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"Le pregunto y el adolescente respondio que tenia otras cosas que hacer pero que ahora por eso lo iba a dejar solo, Pascal no pudo hacer nada, Â¡No logro llegar!\n Â¡Se mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le pregunto y el adolescente respondio que tenia otras cosas que hacer pero que ahora por eso lo iba a dejar solo, Pascal no pudo hacer nada, ¡No logro llegar!\n ¡Se mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Lo corrio y el adolescente se fue por lo que Pascal quedo desamparado, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo corrio y el adolescente se fue por lo que Pascal quedo desamparado, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Acepto la ayuda y se fue en la moto a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Acepto la ayuda y se fue en la moto a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1837,13 +1841,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"Se levanto pero solo duro un segundo de pie y cayo,Pascal no pudo mas Â¡No logro llegar a la granja!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se levanto pero solo duro un segundo de pie y cayo,Pascal no pudo mas ¡No logro llegar a la granja!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Se curo del golpe pero al ver que no tenia la suficiente energia para irse decidio quedarse en el pueblo, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se curo del golpe pero al ver que no tenia la suficiente energia para irse decidio quedarse en el pueblo, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Le puso el aceite a la bici y alcanzo a llegar con la energia que tenia \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Le puso el aceite a la bici y alcanzo a llegar con la energia que tenia \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1858,13 +1862,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {   
                             case 1:barras-=6;
-                            cout<<"Se levanto pero no tuvo la sigueinte fuerza para seguir adelante, Â¡No logro llegar a la granja!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se levanto pero no tuvo la sigueinte fuerza para seguir adelante, ¡No logro llegar a la granja!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Espero, se le paso el dolor y ya con la bicicleta arreglada en el camino se dio cuenta que no tenia frenos y ya no resisitio otro golpeÂ¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Espero, se le paso el dolor y ya con la bicicleta arreglada en el camino se dio cuenta que no tenia frenos y ya no resisitio otro golpe¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=4;
-                            cout<<"Se levanto y consiguio mucha comida y le alcanzo para ir por la bicicleta y llegar a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se levanto y consiguio mucha comida y le alcanzo para ir por la bicicleta y llegar a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1879,13 +1883,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             { 
                             case 1:barras+=6;
-                            cout<<"Con el jugo que se tomo le dio energia para encontrar la granja Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Con el jugo que se tomo le dio energia para encontrar la granja ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Tomo el agua y despues de estar caminando comio las frutas pero Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Tomo el agua y despues de estar caminando comio las frutas pero ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"No repartio bien su comida y se quedo varado en el camino \n Â¡No logro llegar a la granja!\n Â¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No repartio bien su comida y se quedo varado en el camino \n ¡No logro llegar a la granja!\n ¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1906,19 +1910,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
                         {
                         case 1:barras-=1;
-                        cout<<"Bajo el aceite y se lo coloco a la bicicleta, ahora puede rodar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a la granja asÃ­ \n2.Buscar comida e irse en la bici \n3.Revisar la bicicleta antes de irse\n4.Salir del programa" << std::endl;
+                        cout<<"Bajo el aceite y se lo coloco a la bicicleta, ahora puede rodar \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a la granja así \n2.Buscar comida e irse en la bici \n3.Revisar la bicicleta antes de irse\n4.Salir del programa" << std::endl;
            					cin>>opcionesn;
                     			  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     			  switch(opcionesn)
                             {
                             case 1:barras-=6;
-                            cout<<"Se fue a la granja en la bici pero no se percato que no tenia frenos y choco Â¡No lo logro!\n Â¡La granja se quedo esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue a la granja en la bici pero no se percato que no tenia frenos y choco ¡No lo logro!\n ¡La granja se quedo esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Se fue a la granja en la bici pero no se percato que no tenia frenos y choco pero con la comida que llevaba resistio el golpe Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue a la granja en la bici pero no se percato que no tenia frenos y choco pero con la comida que llevaba resistio el golpe ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Reviso la bicicleta, se dio cuenta que no tenia frenos asi que los arreglo y se fue a la granja despues \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Reviso la bicicleta, se dio cuenta que no tenia frenos asi que los arreglo y se fue a la granja despues \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1933,13 +1937,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras+=2;
-                            cout<<"Raciono bien su alimento y le alcanzo para llegar a la granja Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Raciono bien su alimento y le alcanzo para llegar a la granja ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"No raciono bien su alimento y no le alcanzo para llegar a la granja, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No raciono bien su alimento y no le alcanzo para llegar a la granja, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Se quedo con falta de energia en el camino \n Â¡No logro llegar a la granja!\n Â¡Sus amigos se quedaran esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se quedo con falta de energia en el camino \n ¡No logro llegar a la granja!\n ¡Sus amigos se quedaran esperandolo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1948,19 +1952,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 3:barras+=2;
-                        cout<<"Encontro las llaves de la moto y tomo agua para hidratarse\n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Revisar la moto antes de irse \n2.Buscar el casco de seguridad e irse \n3.Irse asÃ­ a la granja\n4.Salir del programa" << std::endl;
+                        cout<<"Encontro las llaves de la moto y tomo agua para hidratarse\n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Revisar la moto antes de irse \n2.Buscar el casco de seguridad e irse \n3.Irse así a la granja\n4.Salir del programa" << std::endl;
                 		cin>>opcionesn;
   			  				cout<<"Elegiste -"<<opcionesn<<""<<endl;
    			  				switch(opcionesn)
                             { 
                             case 1:barras-=0;
-                            cout<<"La moto estaba muy buen estado, asi que se fue y el camino estuvo muy facil Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La moto estaba muy buen estado, asi que se fue y el camino estuvo muy facil ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Busco y busco el casco pero no lo encontro, asi que decidio irse a pie y no le alcanzo la energia Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Busco y busco el casco pero no lo encontro, asi que decidio irse a pie y no le alcanzo la energia ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Se arriesgo a irse sin revisar la moto y sin casco pero todo le salio bien y no paso nada \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se arriesgo a irse sin revisar la moto y sin casco pero todo le salio bien y no paso nada \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -1981,7 +1985,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 }
             break;
             case 3:barras-=6;
-            cout<<"Se quedo viendo la tele y ahora sabe bien los datos de la granja, pero tambien salio que el dueÃ±o de la granja era malo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir queriendo ir a la granja para informarle a sus amigos \n2.Apresurarse a ir para salvar a sus amigos \n3.Ya no ir y pasearse en el pueblo\n4.Salir del programa" << std::endl;
+            cout<<"Se quedo viendo la tele y ahora sabe bien los datos de la granja, pero tambien salio que el dueño de la granja era malo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Seguir queriendo ir a la granja para informarle a sus amigos \n2.Apresurarse a ir para salvar a sus amigos \n3.Ya no ir y pasearse en el pueblo\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.3.1
@@ -2000,13 +2004,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras-=6;
-                            cout<<"La poquita que dejo fue la que le hizo falta para llegar a la granja Â¡No logro llegar a la granja!\n Â¡Que mala eleccion!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La poquita que dejo fue la que le hizo falta para llegar a la granja ¡No logro llegar a la granja!\n ¡Que mala eleccion!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras+=6;
-                            cout<<"Se llevo toda y la fue comiendo durante el camino, hasta que un oso que salio derrepene se la quito y lo dejo sin nada Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se llevo toda y la fue comiendo durante el camino, hasta que un oso que salio derrepene se la quito y lo dejo sin nada ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=6;
-                            cout<<"Comio la mitad al empezar el viaje y la otra mitad cuando ya faltaba poco \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Comio la mitad al empezar el viaje y la otra mitad cuando ya faltaba poco \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2015,19 +2019,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             }
                         break;
                         case 2:barras-=1;
-                        cout<<"Encontro una patineta en la recamara de un niÃ±o \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Usar esa patineta para ir con sus amigos \n2.Mejor irse caminando y ver si la energia alcanza \n3.Dejarla y buscar otro metodo\n4.Salir del programa" << std::endl;
+                        cout<<"Encontro una patineta en la recamara de un niño \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Usar esa patineta para ir con sus amigos \n2.Mejor irse caminando y ver si la energia alcanza \n3.Dejarla y buscar otro metodo\n4.Salir del programa" << std::endl;
                 		cin>>opcionesn;
       			  				cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {
                             case 1:barras-=1;
-                            cout<<"Intento llegar con la patineta y le resulto mas facil de lo que pensaba Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento llegar con la patineta y le resulto mas facil de lo que pensaba ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se fue, pero se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se fue, pero se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"Dejo la patineta y no encontro otro metodo, buscando por los callejones del pueblo salio una rata que lo asusto y provoco un paro cardiaco \n Â¡No logro llegar a la granja!\n Â¡Murio del susto!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Dejo la patineta y no encontro otro metodo, buscando por los callejones del pueblo salio una rata que lo asusto y provoco un paro cardiaco \n ¡No logro llegar a la granja!\n ¡Murio del susto!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2042,13 +2046,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Encotro las piedras y fue a la granja a sacar al dueÃ±o a resorterazos y si pudo hacerlo, Â¡Lo logro!\n Â¡Salvo a sus amigos y les dio la granja!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Encotro las piedras y fue a la granja a sacar al dueño a resorterazos y si pudo hacerlo, ¡Lo logro!\n ¡Salvo a sus amigos y les dio la granja!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Lo dejo tirado y al llegar a la granja no pudo hacer nada y solo le conto a los demas animales lo que vio Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© mala suerte que no pudo hacer nada!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo dejo tirado y al llegar a la granja no pudo hacer nada y solo le conto a los demas animales lo que vio ¡Sí logro llegar a la granja!\n¡Qué mala suerte que no pudo hacer nada!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras+=2;
-                            cout<<"Tomo el agua y busco piedras en la granja para lanzarle al dueÃ±o, lograron ahuyentarlo \n Â¡Logro llegar y salvarlos!\n Â¡Sus amigos se lo agradecieron!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Tomo el agua y busco piedras en la granja para lanzarle al dueño, lograron ahuyentarlo \n ¡Logro llegar y salvarlos!\n ¡Sus amigos se lo agradecieron!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2075,13 +2079,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {
                             case 1:barras-=0;
-                            cout<<"El camion si llego a la granja y Pascal ayudo a todos sus amigos a subir al camion Â¡Lo logro!\n Â¡Los salvo Pascal!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"El camion si llego a la granja y Pascal ayudo a todos sus amigos a subir al camion ¡Lo logro!\n ¡Los salvo Pascal!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=0;
-                            cout<<"Paso a ponerle gasolina pero cuando llego a la granja fue muy tarde Â¡No logro llegar a tiempo a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Paso a ponerle gasolina pero cuando llego a la granja fue muy tarde ¡No logro llegar a tiempo a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=0;
-                            cout<<"Busco otro transporte y encontro una camioneta mas chica, donde solo pudo salvar a los mas pequeÃ±os y los grandes hicieron desastres para poder salir \n Â¡Logro llegar!\n Â¡Les aviso y los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Busco otro transporte y encontro una camioneta mas chica, donde solo pudo salvar a los mas pequeños y los grandes hicieron desastres para poder salir \n ¡Logro llegar!\n ¡Les aviso y los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2096,13 +2100,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras+=5;
-                            cout<<"Con la comida y la brujula, Pascal llego facilmente a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Con la comida y la brujula, Pascal llego facilmente a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"No encontro el mapa y a pesar de toda la comida que tenia, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No encontro el mapa y a pesar de toda la comida que tenia, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=6;
-                            cout<<"La lata estaba echada a perder y le dio una infeccion en el estomago, Pascal no resistio \n Â¡No logro llegar!\n Â¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"La lata estaba echada a perder y le dio una infeccion en el estomago, Pascal no resistio \n ¡No logro llegar!\n ¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2117,13 +2121,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Llevo todo y al llegar a la granja les conto lo que vio en las noticias a sus amigos y los ayudo a escapar con las cosas, solo que se hicieron daÃ±o por no tener con que inflar los colchones, Â¡Lo logro!\n Â¡Los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Llevo todo y al llegar a la granja les conto lo que vio en las noticias a sus amigos y los ayudo a escapar con las cosas, solo que se hicieron daño por no tener con que inflar los colchones, ¡Lo logro!\n ¡Los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=1;
-                            cout<<"Lo encontro y fue rapido a la granja a ayudar a sus amigos y se fueron a vivir a otra granjaÂ¡SÃ­ logro llegar a la granja!\nÂ¡Los salvo del dueÃ±o malo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo encontro y fue rapido a la granja a ayudar a sus amigos y se fueron a vivir a otra granja¡Sí logro llegar a la granja!\n¡Los salvo del dueño malo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Llevo todo y al llegar a la granja les conto lo que vio de las noticias a sus amigos y los ayudo a escapar con las cosas que guardo, Â¡Lo logro!\n Â¡Los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Llevo todo y al llegar a la granja les conto lo que vio de las noticias a sus amigos y los ayudo a escapar con las cosas que guardo, ¡Lo logro!\n ¡Los salvo!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2150,13 +2154,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {   
                             case 1:
-                            cout<<"Los abrio y cerro y ya no habia nada, Â¡El pueblo estaba maldito!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Los abrio y cerro y ya no habia nada, ¡El pueblo estaba maldito!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:
-                            cout<<"Intento escapar pero siempre volvia al mismo lugar Â¡No logro llegar a la granja!\nÂ¡El peublo estaba maldito!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Intento escapar pero siempre volvia al mismo lugar ¡No logro llegar a la granja!\n¡El peublo estaba maldito!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:barras-=1;
-                            cout<<"Los ataco pero sus golpes los atravesaban, no podia hacer nada \n Â¡Quedo atrapado!\n Â¡No logro ir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Los ataco pero sus golpes los atravesaban, no podia hacer nada \n ¡Quedo atrapado!\n ¡No logro ir con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2171,13 +2175,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Fue a los helados y al llegar el puesto lo absobio y no se supo nada mas Â¡No logro reunirse con sus amigos!\n Â¡QuÃ© lastima!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Fue a los helados y al llegar el puesto lo absobio y no se supo nada mas ¡No logro reunirse con sus amigos!\n ¡Qué lastima!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:
-                            cout<<"Busco otro puesto y tomo su helado pero se quedo atrapado en ese lugar Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Busco otro puesto y tomo su helado pero se quedo atrapado en ese lugar ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"Siguio jugando en los juegos y asi se dio cuenta que ahi estaria para siempre \n Â¡No Logro llegar!\n Â¡QuÃ© fue lo que paso?!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Siguio jugando en los juegos y asi se dio cuenta que ahi estaria para siempre \n ¡No Logro llegar!\n ¡Qué fue lo que paso?!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2192,13 +2196,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
           			  			switch(opcionesn)
                             {  
                             case 1:barras-=1;
-                            cout<<"Lo reviso y sÃ­ era, Â¡Estaba en un mudno alterno derrepente!\n Â¡como sucedio?!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Lo reviso y sí era, ¡Estaba en un mudno alterno derrepente!\n ¡como sucedio?!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 2:barras-=6;
-                            cout<<"Se salio de la granja pero por andar paseandose no cumplio su mision, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"Se salio de la granja pero por andar paseandose no cumplio su mision, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 3:
-                            cout<<"No habia ningun animal, todo fue parte de sus alucinaciones \n Â¡Quedo atrapado en sus sueÃ±os!\n Â¡Que raro!\n Quedo con "<<barras<< " barras" << std::endl;
+                            cout<<"No habia ningun animal, todo fue parte de sus alucinaciones \n ¡Quedo atrapado en sus sueños!\n ¡Que raro!\n Quedo con "<<barras<< " barras" << std::endl;
                             break;
                             case 4:
                             return 0;
@@ -2233,7 +2237,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
             switch(opcionesn)
             {
             case 1:barras-=1;
-            cout<<"Espero al pescador y este regreso y se le acerco, le dijo que por quÃ© estaba ahÃ­ \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Contestarle y placticarle el asunto \n2.Contarle una historia falsa para ver que hace el pescador \n3.Ignorarlo y correr\n4.Salir del programa" << std::endl;
+            cout<<"Espero al pescador y este regreso y se le acerco, le dijo que por qué estaba ahí \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Contestarle y placticarle el asunto \n2.Contarle una historia falsa para ver que hace el pescador \n3.Ignorarlo y correr\n4.Salir del programa" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.4.1
@@ -2253,13 +2257,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                             	  {
                             	  barras-=2;    
                             	  case 1:
-                            	  cout<<"Se fue y llego a la granja sin problemas Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue y llego a la granja sin problemas ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras+=3;
-                            	  cout<<"Reunio mas comida, llego sin problemas a la granja y hasta le sobro comida para sus amigos, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Reunio mas comida, llego sin problemas a la granja y hasta le sobro comida para sus amigos, ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"El pescador se estreso y ya no lo llevo y quedo sin energia \n Â¡No logro llegar!\n Â¡SÃ© mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador se estreso y ya no lo llevo y quedo sin energia \n ¡No logro llegar!\n ¡Sé mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2274,13 +2278,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=1;
-                            	  cout<<"Regreso con el pescador y este lo rechazo, Â¡No lo logro!\n Â¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Regreso con el pescador y este lo rechazo, ¡No lo logro!\n ¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"No encontro nada y se rompio la pata en una caida, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"No encontro nada y se rompio la pata en una caida, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:
-                            	  cout<<"Rodeo el mar y estaba luego luego la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Rodeo el mar y estaba luego luego la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2295,13 +2299,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=1;
-                            	  cout<<"Llego a la carretera y paro un taxi que lo llevo a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Llego a la carretera y paro un taxi que lo llevo a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"Le devolvio el dinero al pescador y este solo tomo el dinero y se fue, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le devolvio el dinero al pescador y este solo tomo el dinero y se fue, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Por estar buscando la comida cayo en una zanja y, \n Â¡No logro llegar!\n Â¡QuÃ© malo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Por estar buscando la comida cayo en una zanja y, \n ¡No logro llegar!\n ¡Qué malo!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2314,7 +2318,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                 break;
                 case 2:barras-=1;
-                cout<<"Le conto y el pescador lo dudo un poco pero le ofrecio alimento y decirle el camino \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Aceptar la ayuda del pescador \n2.Decirle que sÃ­ pero planear robarle \n3.Rechazarlo e irse\n4.Salir del programa" << std::endl;
+                cout<<"Le conto y el pescador lo dudo un poco pero le ofrecio alimento y decirle el camino \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Aceptar la ayuda del pescador \n2.Decirle que sí pero planear robarle \n3.Rechazarlo e irse\n4.Salir del programa" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
@@ -2326,13 +2330,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {    
                             	  case 1:barras-=6;
-                            	  cout<<"El pescador por decirle rapido las instrucciones se las dijo mal y Pascal se perdio, Â¡No lo logro!\n Â¡SÃ© mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador por decirle rapido las instrucciones se las dijo mal y Pascal se perdio, ¡No lo logro!\n ¡Sé mas paciente!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:
-                            	  cout<<"Fue paciente y el pescador le trazo un mapa que seguir y llego a la granja sin problemas , Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Fue paciente y el pescador le trazo un mapa que seguir y llego a la granja sin problemas , ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=4;
-                            	  cout<<"Le dio mas agua el pescador y Pascal llego bien hidratado a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le dio mas agua el pescador y Pascal llego bien hidratado a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2347,13 +2351,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {   
                             	  case 1:barras-=1;
-                            	  cout<<"Simulo y arreglo la escena, tomo el dinero y se fue a la granja Â¡Lo logro!\n Â¡Robando, pero llego!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Simulo y arreglo la escena, tomo el dinero y se fue a la granja ¡Lo logro!\n ¡Robando, pero llego!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Se escapo, pero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se escapo, pero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Lo alcanzo antes de subirse al taxi y le quito el dinero y lo vendio a un carnicero \n Â¡No logro llegar!\n Â¡Cada acto tiene su consecuencia!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo alcanzo antes de subirse al taxi y le quito el dinero y lo vendio a un carnicero \n ¡No logro llegar!\n ¡Cada acto tiene su consecuencia!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2369,13 +2373,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
 			  				   	  {
 	   
                             	  case 1:barras-=6;
-                            	  cout<<"El pescador lo ignoro y Pascal se fue y perdio en un bosque, Â¡No lo logro!\n Â¡QuÃ© mal plan!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador lo ignoro y Pascal se fue y perdio en un bosque, ¡No lo logro!\n ¡Qué mal plan!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:
-                            	  cout<<"Camino y sÃ­ le atino, era el camino hacia la granja , Â¡Lo logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Camino y sí le atino, era el camino hacia la granja , ¡Lo logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Se rindio y hasta ahÃ­ llego \n Â¡No logro llegar!\n Â¡Se mas perseverante!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se rindio y hasta ahí llego \n ¡No logro llegar!\n ¡Se mas perseverante!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2402,13 +2406,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:
-                            	  cout<<"Le ayudo al pescador y este se conmovio y lo llevo a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le ayudo al pescador y este se conmovio y lo llevo a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Se escapo, pero se quedo sin barras y los peces no sirvieron de mucho, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se escapo, pero se quedo sin barras y los peces no sirvieron de mucho, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Le dijo el camino pero a falta de energia, Pascal fue derribado por una enorme roca de la que no pudo escapar \n Â¡No logro llegar!\n Â¡Muy mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le dijo el camino pero a falta de energia, Pascal fue derribado por una enorme roca de la que no pudo escapar \n ¡No logro llegar!\n ¡Muy mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2417,19 +2421,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                          	   	  }
                         break;
                         case 2:barras-=1;
-                        cout<<"Le dijo que sÃ­, y que te te tienes que ir lo mas pronto \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomar la comida y agua e irse \n2.Tomarlo como insulto y no aceptar nada \n3.Pedirle mas comida para sus amigos\n4.Salir del programa" << std::endl;
+                        cout<<"Le dijo que sí, y que te te tienes que ir lo mas pronto \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomar la comida y agua e irse \n2.Tomarlo como insulto y no aceptar nada \n3.Pedirle mas comida para sus amigos\n4.Salir del programa" << std::endl;
                 				  cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras+=6;
-                            	  cout<<"Se fue con la comida y agua y llevo a la granja donde les dio las sobras a sus amigos Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue con la comida y agua y llevo a la granja donde les dio las sobras a sus amigos ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Se fue pero por culpa de su orgullo se quedo sin energia Â¡No logro llegar \nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue pero por culpa de su orgullo se quedo sin energia ¡No logro llegar \n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=5;
-                            	  cout<<"Le dio un poco mas de comida y se fue a darsela a sus amigos \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le dio un poco mas de comida y se fue a darsela a sus amigos \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2438,19 +2442,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                          	   	  }
                         break;
                         case 3:barras-=1;
-                        cout<<"Le dice que el esta muy solo y que podrias ser su acompaÃ±ante \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Aceptar ser su acompaÃ±ante \n2.Decirle que puede visitarlo muy seguido si le ayuda \n3.Rechazarlo\n4.Salir del programa" << std::endl;
+                        cout<<"Le dice que el esta muy solo y que podrias ser su acompañante \n Quedo con "<< barras << " barras \n Elige su proxima accion \n1.Aceptar ser su acompañante \n2.Decirle que puede visitarlo muy seguido si le ayuda \n3.Rechazarlo\n4.Salir del programa" << std::endl;
                 				  cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {
                             	  case 1:
-                            	  cout<<"Se quedo con el y ahora hacen un gran equipo Â¡Encontro un nuevo hogar!\n Â¡Que feliz!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se quedo con el y ahora hacen un gran equipo ¡Encontro un nuevo hogar!\n ¡Que feliz!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"El pescador acepta y lo ayuda a llegar a la granja, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena onda!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador acepta y lo ayuda a llegar a la granja, ¡Sí logro llegar a la granja!\n¡Qué buena onda!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Lo rechaza y el pescador no le ayuda, Pascal ve que hay lluvia acida y no encuentra donde esconderse \n Â¡No logro llegar!\n Â¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo rechaza y el pescador no le ayuda, Pascal ve que hay lluvia acida y no encuentra donde esconderse \n ¡No logro llegar!\n ¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2471,7 +2475,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 }
             break;
             case 2:barras-=1;
-            cout<<"Encontro unas monedas del pescador en un baul \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomar las monedas e irse \n2.Dejarlas ahÃ­ y esperar mas tiempo \n3.Esconderse enfrente del baul" << std::endl;
+            cout<<"Encontro unas monedas del pescador en un baul \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomar las monedas e irse \n2.Dejarlas ahí y esperar mas tiempo \n3.Esconderse enfrente del baul" << std::endl;
             cin>>opcionesn;
             cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 //menu1.4.1
@@ -2490,13 +2494,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {
                             	  case 1:barras-=6;
-                            	  cout<<"Siguio y si le alcanzo Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Siguio y si le alcanzo ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Lo buscopero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo buscopero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=5;
-                            	  cout<<"Compro comida en el camino y se fue caminandoÂ¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Compro comida en el camino y se fue caminando¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2505,19 +2509,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                          	   	  }
                         break;
                         case 2:barras-=6;
-                        cout<<"Va caminando pero ve que le hace falta alimento a Ã©l \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Comprarse para el\n2.Arriesgar y no comprar \n3.Pagar un taxi" << std::endl;
+                        cout<<"Va caminando pero ve que le hace falta alimento a él \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Comprarse para el\n2.Arriesgar y no comprar \n3.Pagar un taxi" << std::endl;
                 				  cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  { 
                             	  case 1:barras+=8;
-                            	  cout<<"Se compro demasiada comida y tuvo barras de energia de sobra, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se compro demasiada comida y tuvo barras de energia de sobra, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Se arriesgo, pero se quedo sin energia y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se arriesgo, pero se quedo sin energia y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:
-                            	  cout<<"Pago un taxi que lo llevo a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Pago un taxi que lo llevo a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2532,13 +2536,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras+=6;
-                            	  cout<<"Se compro para el taxi y comida, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se compro para el taxi y comida, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras+=4;
-                            	  cout<<"Logro juntar para los dos Â¡Si logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Logro juntar para los dos ¡Si logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=5;
-                            	  cout<<"Invirtio todo en comida, tardo mucho pero llego \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Invirtio todo en comida, tardo mucho pero llego \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2553,7 +2557,7 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                         }
                 break;
                 case 2:barras-=1;
-                cout<<"Las dejo ahÃ­ y el pescador fue y echo mas monedas \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomarlo y huir \n2.En cuanto lo vuelva a ver decirle lo mal de su escondite \n3.Esperar a que se junte mas\n4.Salir del programa" << std::endl;
+                cout<<"Las dejo ahí y el pescador fue y echo mas monedas \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Tomarlo y huir \n2.En cuanto lo vuelva a ver decirle lo mal de su escondite \n3.Esperar a que se junte mas\n4.Salir del programa" << std::endl;
                 cin>>opcionesn;
                 cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
@@ -2565,13 +2569,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=0;
-                            	  cout<<"El pescador le dice que se suba a la moto y lo lleva a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador le dice que se suba a la moto y lo lleva a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Lo ataco pero no sirvio de nada, este lo capturo , Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo ataco pero no sirvio de nada, este lo capturo , ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Le devolvio el dinero y este lo perdono pero no lo llevo a la granja \n Â¡No logro llegar!\n Â¡Pero es de sabios arrepentirse!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le devolvio el dinero y este lo perdono pero no lo llevo a la granja \n ¡No logro llegar!\n ¡Pero es de sabios arrepentirse!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2580,19 +2584,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                          	   	  }
                         break;
                         case 2:barras-=0;
-                        cout<<"Le dice el pescador que quÃ© hacia ahÃ­ \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Le dice que estaba planeando robarle pero que decidio no hacerlo \n2.Decirle que lo iban siguiendo y que por eso te escondiste ahÃ­ \n3.Contarle la verdad\n4.Salir del programa" << std::endl;
+                        cout<<"Le dice el pescador que qué hacia ahí \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Le dice que estaba planeando robarle pero que decidio no hacerlo \n2.Decirle que lo iban siguiendo y que por eso te escondiste ahí \n3.Contarle la verdad\n4.Salir del programa" << std::endl;
                 				  cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=6;
-                            	  cout<<"El pescador lo corrio de su casa y Pascal termino sin nada, Â¡No lo logro!\n Â¡Intenta mas para la otra!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador lo corrio de su casa y Pascal termino sin nada, ¡No lo logro!\n ¡Intenta mas para la otra!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=0;
-                            	  cout<<"Resulto el plan y por lastima lo llevo a la granja, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Resulto el plan y por lastima lo llevo a la granja, ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=0;
-                            	  cout<<"El pescador al principio se enojo por las mentiras que hizo pero al saber la historia lo comprendio y lo llevo a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"El pescador al principio se enojo por las mentiras que hizo pero al saber la historia lo comprendio y lo llevo a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2607,13 +2611,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  { 
                             	  case 1:barras-=6;
-                            	  cout<<"Espero demasiado y nunca llego a nada, Â¡No lo logro!\n Â¡Intenta mas para la otra!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Espero demasiado y nunca llego a nada, ¡No lo logro!\n ¡Intenta mas para la otra!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=2;
-                            	  cout<<"Se fue con lo que habia y se bajo antes del taxi pero camino y llego, Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue con lo que habia y se bajo antes del taxi pero camino y llego, ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Se acabo su energia tratando de encontrar mas energia \n Â¡No logro llegar!\n Â¡Sera para la proxima!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se acabo su energia tratando de encontrar mas energia \n ¡No logro llegar!\n ¡Sera para la proxima!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2640,13 +2644,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=0;
-                            	  cout<<"Lo mordio y tomo su moto, arranco hasta la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo mordio y tomo su moto, arranco hasta la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"No arranco la moto nunca, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"No arranco la moto nunca, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=0;
-                            	  cout<<"Se dejo atrapar y de castigo se quedo como acompaÃ±ante del pescador \n Â¡Logro un nuevo compaÃ±ente!\n Â¡Que no sea un castigo!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se dejo atrapar y de castigo se quedo como acompañante del pescador \n ¡Logro un nuevo compañente!\n ¡Que no sea un castigo!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2661,13 +2665,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {   
                             	  case 1:barras+=3;
-                            	  cout<<"Se fue el pescador y no logro conseguir muchas cosas pero apenas y pudo llegar, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue el pescador y no logro conseguir muchas cosas pero apenas y pudo llegar, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Se siguio haciendo el muerto pero el pescador le hizo una prueba y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se siguio haciendo el muerto pero el pescador le hizo una prueba y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Lo ataco pero no llego muy lejos, el pescador lo secuestro \n Â¡No logro llegar!\n Â¡QuÃ© mal plan!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo ataco pero no llego muy lejos, el pescador lo secuestro \n ¡No logro llegar!\n ¡Qué mal plan!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2682,13 +2686,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras+=3;
-                            	  cout<<"Acepto el trato y consiguio su propia comida Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Acepto el trato y consiguio su propia comida ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras+=5;
-                            	  cout<<"Lo rechazo y robo su comida con la que pudo llegar a la granja Â¡SÃ­ logro llegar a la granja!\nÂ¡QuÃ© buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo rechazo y robo su comida con la que pudo llegar a la granja ¡Sí logro llegar a la granja!\n¡Qué buena suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=3;
-                            	  cout<<"Le robo su moto y si le alcanzo para llegar a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le robo su moto y si le alcanzo para llegar a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2721,19 +2725,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
                         {
                         case 1:barras-=0;
-                        cout<<"Cruzo el rio, pero lo vio el pescador que fue con el dueÃ±o de la granja  \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Desviarse \n2.Continuar con direccion a la granja \n3.Intentar llamar a sus amigos por seÃ±as para que le ayuden\n4.Salir del programa" << std::endl;
+                        cout<<"Cruzo el rio, pero lo vio el pescador que fue con el dueño de la granja  \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Desviarse \n2.Continuar con direccion a la granja \n3.Intentar llamar a sus amigos por señas para que le ayuden\n4.Salir del programa" << std::endl;
                 					 cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  { 
                             	  case 1:barras-=1;
-                            	  cout<<"Se desvio y espero a que se fuera, cuando vio que se fue regreso a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se desvio y espero a que se fuera, cuando vio que se fue regreso a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"Continuo hacia la granja y Â¡SÃ­ llego!\nÂ¡QuÃ© buena onda!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Continuo hacia la granja y ¡Sí llego!\n¡Qué buena onda!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=1;
-                            	  cout<<"Los amigos le ayudaron y desviaron la atencion del pescador para que pudiera llegar Pascal \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Los amigos le ayudaron y desviaron la atencion del pescador para que pudiera llegar Pascal \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2748,13 +2752,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {    
                             	  case 1:barras+=5;
-                            	  cout<<"Busco la comida y la encontro, le dio suficiente energia para llegar a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Busco la comida y la encontro, le dio suficiente energia para llegar a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"La jalo con todas sus fuerzas pero se termino cayendo al mar, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"La jalo con todas sus fuerzas pero se termino cayendo al mar, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=4;
-                            	  cout<<"Apenitas y le alcanzo la energia para llegar \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Apenitas y le alcanzo la energia para llegar \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2769,13 +2773,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=6;
-                            	  cout<<"Nado hasta la orilla pero lamentablemente no pudo avanzar mas, Â¡No lo logro!\n Â¡Pobrecito!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Nado hasta la orilla pero lamentablemente no pudo avanzar mas, ¡No lo logro!\n ¡Pobrecito!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"Se dejo llevar por la corriente y le ayudo mucho solo tuvo que caminar unos metros a la granja, Â¡Lo logro llegar a la granja!\nÂ¡Por fin se reunio con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se dejo llevar por la corriente y le ayudo mucho solo tuvo que caminar unos metros a la granja, ¡Lo logro llegar a la granja!\n¡Por fin se reunio con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Por mas que intento subir no pudo y se dejo caer al rio \n Â¡No logro llegar!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Por mas que intento subir no pudo y se dejo caer al rio \n ¡No logro llegar!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2802,13 +2806,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=0;
-                            	  cout<<"Se lo pidio y el granjero accedio, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se lo pidio y el granjero accedio, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Le pregunto si no tenia comida y el pescador le dijo que no, asi que se quedo sin energia, Â¡No logro llegar a la granja!\nÂ¡Falto muy poco!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le pregunto si no tenia comida y el pescador le dijo que no, asi que se quedo sin energia, ¡No logro llegar a la granja!\n¡Falto muy poco!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=1;
-                            	  cout<<"Se bajo y el pescador lo acompaÃ±o hsta la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se bajo y el pescador lo acompaño hsta la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2823,13 +2827,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {
                             	  case 1:barras-=1;
-                            	  cout<<"Detuvo el bote y al devolverselo al pescador, este lo llevo a la granja, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Detuvo el bote y al devolverselo al pescador, este lo llevo a la granja, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"Continuo y en la orilla corrio hacia la granja y, Â¡SÃ­ logro llegar a la granja!\nÂ¡Que feliz estaba con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Continuo y en la orilla corrio hacia la granja y, ¡Sí logro llegar a la granja!\n¡Que feliz estaba con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"No encontro mas comida y se quedo varado en el camino \n Â¡No logro llegar!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"No encontro mas comida y se quedo varado en el camino \n ¡No logro llegar!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2844,13 +2848,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  { 
                             	  case 1:barras-=6;
-                            	  cout<<"Lo espero y el pescador no tuvo piedad, Â¡No lo logro!\n Â¡Eso debio doler!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Lo espero y el pescador no tuvo piedad, ¡No lo logro!\n ¡Eso debio doler!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=1;
-                            	  cout<<"Se avento al mar y la corriente lo empujo hasta la orlla de la granja Â¡SÃ­ llego!\nÂ¡Se reunio con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se avento al mar y la corriente lo empujo hasta la orlla de la granja ¡Sí llego!\n¡Se reunio con sus amigos!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Lo que comio del suelo solo le dio energia para perder al pescador pero no para llegar a la granja \n Â¡No logro llegar!\n Â¡Que mala suerte!Quedo con"<<barras<<"barras"<<std::endl;
+                            	  cout<<"Lo que comio del suelo solo le dio energia para perder al pescador pero no para llegar a la granja \n ¡No logro llegar!\n ¡Que mala suerte!Quedo con"<<barras<<"barras"<<std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2871,19 +2875,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                 switch(opcionesn)
                         {
                         case 1:barras-=0;
-                        cout<<"Espero y aparecio el bote otra vez pero no tiene la suficiente energia para manejarlo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a la casa a buscar comida \n2.Buscar la comida en la cabaÃ±a \n3.Tomar agua e intentar lograrlo con eso\n4.Salir del programa" << std::endl;
+                        cout<<"Espero y aparecio el bote otra vez pero no tiene la suficiente energia para manejarlo \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Ir a la casa a buscar comida \n2.Buscar la comida en la cabaña \n3.Tomar agua e intentar lograrlo con eso\n4.Salir del programa" << std::endl;
                 					  cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=1;
-                            	  cout<<"Fue a la casa y si encontro comida, la comio e inmediatamente se fue al bote, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Fue a la casa y si encontro comida, la comio e inmediatamente se fue al bote, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"En la cabaÃ±a solo habian herramientas de trabajo y de tanto buscar, gasto su energia, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"En la cabaña solo habian herramientas de trabajo y de tanto buscar, gasto su energia, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras+=3;
-                            	  cout<<"Tomo suficiente agua como para llegar a la granja \n Â¡Logro llegar!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Tomo suficiente agua como para llegar a la granja \n ¡Logro llegar!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2892,19 +2896,19 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                          	   	  }
                         break;
                         case 2:barras-=1;
-                        cout<<"Recolecto mucha comida \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Caminar hacia la granja, guiandose a travÃ©s del cartel \n2.Irse en el bote \n3.Quedarse a vivir con el pescador\n4.Salir del programa" << std::endl;
+                        cout<<"Recolecto mucha comida \n Quedo con "<< barras<< " barras \n Elige su proxima accion \n1.Caminar hacia la granja, guiandose a través del cartel \n2.Irse en el bote \n3.Quedarse a vivir con el pescador\n4.Salir del programa" << std::endl;
                 						 cin>>opcionesn;
                     		  	  cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:
-                            	  cout<<"Se guio a travÃ©s del cartel pero era otra granja, Â¡No lo logro!\n Â¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se guio a través del cartel pero era otra granja, ¡No lo logro!\n ¡Que mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;barras-=6;
                             	  case 2:
-                            	  cout<<"Se fue en el bote, pero se quedo sin barras y, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Se fue en el bote, pero se quedo sin barras y, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;barras-=6;
                             	  case 3:
-                            	  cout<<"Le ofrecio su compaÃ±ia y el pescador la acepto \n Â¡Encontro un nuevo hogar!\n Â¡Que vivan felices!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Le ofrecio su compañia y el pescador la acepto \n ¡Encontro un nuevo hogar!\n ¡Que vivan felices!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
@@ -2919,13 +2923,13 @@ cout<<"Elegiste -"<<opcionesn<<""<<endl;
                     		  	  switch(opcionesn)
                             	  {  
                             	  case 1:barras-=1;
-                            	  cout<<"Nado y nado, y con sus ultimos suspiros, Â¡Lo logro!\n Â¡Lo habian extraÃ±ado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Nado y nado, y con sus ultimos suspiros, ¡Lo logro!\n ¡Lo habian extrañado mucho!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 2:barras-=6;
-                            	  cout<<"Busco la tabla pero no la encontro y se agoto su energia, Â¡No logro llegar a la granja!\nÂ¡QuÃ© mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Busco la tabla pero no la encontro y se agoto su energia, ¡No logro llegar a la granja!\n¡Qué mala suerte!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 3:barras-=6;
-                            	  cout<<"Encontro el camino pero no llego, se quedo a metros \n Â¡No logro llegar!\n Â¡Energia agotada!\n Quedo con "<<barras<< " barras" << std::endl;
+                            	  cout<<"Encontro el camino pero no llego, se quedo a metros \n ¡No logro llegar!\n ¡Energia agotada!\n Quedo con "<<barras<< " barras" << std::endl;
                             	  break;
                             	  case 4:
                             	  return 0;
