@@ -1,4 +1,8 @@
+#include <iostream>
+#include <string.h>
+#include <limits>
 
+using namespace std;
 
 int main()
 {
